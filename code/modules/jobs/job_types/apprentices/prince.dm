@@ -23,7 +23,7 @@
 
 	allowed_races = RACES_PLAYER_ROYALTY
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
-	allowed_patrons = /datum/devotion/inhumen/envy
+	allowed_patrons = /datum/patron/inhumen/envy
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
 	honorary = "Prince"
 	honorary_f = "Princess"
@@ -48,6 +48,27 @@
 /datum/job/prince/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	addtimer(CALLBACK(SSfamilytree, TYPE_PROC_REF(/datum/controller/subsystem/familytree, AddRoyal), spawned, FAMILY_PROGENY), 10 SECONDS)
+
+/datum/job/prince/after_spawn(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	var/holder = spawned.patron?.devotion_holder
+	if(holder)
+		var/datum/devotion/devotion = new holder()
+		devotion.make_shirleigh_strong()
+		devotion.grant_to(spawned)
+
+
+/datum/job/prince/adjust_patron(mob/living/carbon/human/spawned)
+	var/datum/patron/old_patron = spawned.patron
+	if(old_patron?.type == /datum/patron/inhumen/envy)
+		return
+
+	spawned.set_patron(/datum/patron/inhumen/envy, TRUE)
+
+	var/datum/patron/new_patron = spawned.patron
+	if(old_patron != new_patron) // If the patron we selected first does not match the patron we end up with, display the message.
+		to_chat(spawned, span_warning("[old_patron.display_name ? old_patron.display_name : old_patron] holds no sway over me. For better or for worse, [new_patron.display_name ? new_patron.display_name : new_patron] is within me."))
+
 
 /datum/job/advclass/heir
 	inherit_parent_title = TRUE
@@ -92,13 +113,9 @@
 		TRAIT_MEDIUMARMOR
 	)
 
-/datum/job/advclass/heir/daring/after_spawn(mob/living/carbon/human/spawned, client/player_client)
-	. = ..()
-	var/holder = spawned.patron?.devotion_holder
-	if(holder)
-		var/datum/devotion/devotion = new holder()
-		devotion.make_shirleigh_strong()
-		devotion.grant_to(spawned)
+
+
+
 
 /datum/outfit/heir/daring
 	name = "Prideful Heir (Prince)"

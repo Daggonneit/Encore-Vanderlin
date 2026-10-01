@@ -88,18 +88,6 @@
 			spawned.adjust_skillrank(/datum/attribute/skill/craft/alchemy, -1, TRUE)
 			spawned.adjust_skillrank(/datum/attribute/skill/misc/medicine, -1, TRUE)
 
-/datum/job/bogwitch/adjust_patron(mob/living/carbon/human/spawned)
-	var/datum/patron/old_patron = spawned.patron
-	if(old_patron?.type == /datum/patron/alternate/great_hunt/proven)
-		return
-
-	spawned.set_patron(/datum/patron/alternate/great_hunt/proven, TRUE)
-
-	var/datum/patron/new_patron = spawned.patron
-	if(old_patron != new_patron) // If the patron we selected first does not match the patron we end up with, display the message.
-		to_chat(spawned, span_warning("I've followed the word of [old_patron.display_name ? old_patron.display_name : old_patron] in my younger years, \
-		but the path I tread todae has accustomed me to [new_patron.display_name ? new_patron.display_name : new_patron]."))
-
 
 /datum/outfit/bogwitch
 	name = JOB_BOGWITCH

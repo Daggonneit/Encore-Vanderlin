@@ -33,7 +33,7 @@
 	spell_type = SPELL_MIRACLE
 	associated_skill = /datum/attribute/skill/magic/holy
 
-	cooldown_time = 3 MINUTES
+	cooldown_time = 10 SECONDS
 
 	hand_path = /obj/item/melee/touch_attack/orison
 	draw_message = "I calm my mind and prepare to draw upon an orison."
@@ -163,7 +163,7 @@
 			user.visible_message(span_notice("[user] closes [user.p_their()] eyes and places a glowing hand upon [user.p_their()] chest..."), span_silver("Blessed [user.patron.name], I ask but for a light to guide the way..."))
 
 		if(do_after(user, cast_time, victim))
-			var/light_power = clamp(4 + (holy_skill - 3), 4, 7)
+			var/light_power = clamp(4 + (holy_skill + 3), 4, 7)
 
 			var/datum/status_effect/light_buff/light_buff_status = /datum/status_effect/light_buff
 			if (blessed_mob.has_status_effect(light_buff_status))
@@ -310,7 +310,7 @@
 	return "SUBJECTPRONOUN is surrounded by an aura of gentle light."
 
 /datum/status_effect/light_buff/proc/add_light(mob/living/source)
-	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = source.mob_light(_power = potency)
+	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = source.mob_light(_range = 3, _power = potency)
 	LAZYSET(mobs_affected, source, mob_light_obj)
 	RegisterSignal(source, COMSIG_QDELETING, PROC_REF(on_living_holder_deletion))
 

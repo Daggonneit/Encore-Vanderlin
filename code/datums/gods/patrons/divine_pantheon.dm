@@ -18,7 +18,7 @@ GLOBAL_LIST_INIT(patron_sound_themes, list(
 /datum/patron/divine
 	abstract_type = /datum/patron/divine
 	associated_faith = /datum/faith/divine_pantheon
-	profane_words = list("zizo", "cock", "dick", "fuck", "shit", "pussy", "cuck", "cunt", "asshole")
+	profane_words = list("one envy", "cock", "dick", "fuck", "shit", "pussy", "cuck", "cunt", "asshole")
 	var/associated_psycross = /obj/item/clothing/neck/psycross
 
 /datum/patron/divine/can_pray(mob/living/carbon/human/follower)

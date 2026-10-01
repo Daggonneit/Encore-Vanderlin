@@ -11,12 +11,13 @@
 
 	required_form = FORM_ARCANE
 
-	cooldown_time = 1 MINUTES
+	cooldown_time = 10 SECONDS
 
 	hand_path = /obj/item/melee/touch_attack/prestidigitation
 	draw_message = "I prepare to perform a minor arcyne incantation."
 	drop_message = "I release my minor arcyne focus."
 	charges = 10
+
 
 	var/obj/effect/wisp/prestidigitation/mote
 	var/sparkspeed = 3 SECONDS

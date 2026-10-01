@@ -11,7 +11,7 @@
 
 	charge_required = TRUE
 	charge_time = 10 SECONDS
-	cooldown_time = 3 HOURS
+	cooldown_time = 30 MINUTES
 	spell_cost = 120
 
 	/// Weakref to granted spell, for the dream ending
