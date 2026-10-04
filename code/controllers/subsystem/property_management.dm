@@ -528,6 +528,7 @@ SUBSYSTEM_DEF(housing)
 	valid_jobs += GLOB.serf_positions_paths
 	valid_jobs += GLOB.peasant_positions_paths
 	valid_jobs += GLOB.church_positions_paths
+	valid_jobs += GLOB.inquisition_positions_paths
 
 /obj/structure/sign/property_sign/claim/outsider//For outsiders
 	name = "Outsider's Instancer Crystal"

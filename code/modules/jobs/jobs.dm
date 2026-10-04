@@ -168,6 +168,14 @@ GLOBAL_LIST_INIT(inquisition_positions, list(
 	))
 GLOBAL_PROTECT(inquisition_positions)
 
+
+GLOBAL_LIST_INIT(inquisition_positions_paths, list(
+	/datum/job/inquisitor,
+	/datum/job/orthodoxist,
+	/datum/job/absolver,
+	/datum/job/adept,
+	))
+
 GLOBAL_LIST_INIT(serf_positions, list(
 	/datum/job/innkeep::title,
 	/datum/job/blacksmith::title,
