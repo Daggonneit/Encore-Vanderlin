@@ -251,6 +251,102 @@
 	. = ..()
 	REMOVE_TRAIT(affected, TRAIT_MISSING_NOSE, "[type]")
 
+/datum/wound/cbt
+	name = "testicular torsion"
+	check_name = "<span class='userdanger'><B>NUTCRACK</B></span>"
+	crit_message = list(
+		"The testicles are twisted!",
+		"The testicles are torsioned!",
+	)
+	whp = 50
+	woundpain = 50
+	mob_overlay = ""
+	can_sew = FALSE
+	can_cauterize = FALSE
+	disabling = TRUE
+	critical = TRUE
+	mortal = TRUE
+	associated_bclasses = CBT_BCLASSES
+	min_damage = 5
+	viable_zones = list(BODY_ZONE_PRECISE_GROIN)
+
+/datum/wound/cbt/can_apply_to_bodypart(obj/item/bodypart/affected, zone_precise, damage_bclass)
+	if(HAS_TRAIT(affected.owner, TRAIT_CRITICAL_RESISTANCE))
+		return FALSE
+	. = ..()
+
+/datum/wound/cbt/get_crit_prob(bclass, dam, damage_dividend, mob/living/user, obj/item/bodypart/affected, zone_precise, list/modifiers)
+	if(dam < min_damage)
+		return 0
+	var/cbt_multiplier = (user && HAS_TRAIT(user, TRAIT_NUTCRACKER)) ? 2 : 1
+	return round(dam / 5) * cbt_multiplier // ignores standard formula entirely
+
+/datum/wound/cbt/can_apply_to_mob(mob/living/affected)
+	. = ..()
+	if(!.)
+		return
+	var/obj/item/bodypart/chest/chest = affected.get_bodypart(BODY_ZONE_CHEST)
+	return chest && chest.status == BODYPART_ORGANIC
+
+/datum/wound/cbt/can_stack_with(datum/wound/other)
+	if(istype(other, /datum/wound/cbt))
+		return FALSE
+	return TRUE
+
+/datum/wound/cbt/on_mob_gain(mob/living/affected)
+	. = ..()
+	affected.emote("groin", forced = TRUE)
+	affected.Stun(20)
+	to_chat(affected, "<span class='userdanger'>Something twists inside my groin!</span>")
+	if(affected.gender != MALE)
+		name = "ovarian torsion"
+		check_name = "<span class='userdanger'><B>EGGCRACK</B></span>"
+		crit_message = list(
+			"The ovaries are twisted!",
+			"The ovaries are torsioned!",
+		)
+	else
+		name = "testicular torsion"
+		check_name = "<span class='userdanger'><B>NUTCRACK</B></span>"
+		crit_message = list(
+			"The testicles are twisted!",
+			"The testicles are torsioned!",
+		)
+
+/datum/wound/cbt/on_life()
+	. = ..()
+	if(!iscarbon(owner))
+		return
+	var/mob/living/carbon/carbon_owner = owner
+	if(!carbon_owner.stat && prob(7))
+		carbon_owner.vomit(1, stun = TRUE)
+
+/datum/wound/cbt/permanent
+	name = "testicular evisceration"
+	crit_message = list(
+		"The testicles are destroyed!",
+		"The testicles are eviscerated!",
+	)
+	whp = null
+	can_roll = FALSE
+
+/datum/wound/cbt/permanent/on_mob_gain(mob/living/affected)
+	. = ..()
+	if(affected.gender != MALE)
+		name = "ovarian evisceration"
+		check_name = "<span class='userdanger'><B>EGGCRACK</B></span>"
+		crit_message = list(
+			"The ovaries are destroyed!",
+			"The ovaries are eviscerated!",
+		)
+	else
+		name = "testicular evisceration"
+		check_name = "<span class='userdanger'><B>NUTCRACK</B></span>"
+		crit_message = list(
+			"The testicles are destroyed!",
+			"The testicles are eviscerated!",
+		)
+
 /datum/wound/scarring
 	name = "permanent scarring"
 	check_name = "<span class='userdanger'><B>SCARRED</B></span>"
