@@ -102,6 +102,7 @@
 
 /obj/item/coin/proc/set_quantity(new_quantity)
 	quantity = new_quantity
+	melt_amount = initial(melt_amount) * quantity
 	if(quantity > 1)
 		drop_sound = 'sound/foley/coins1.ogg'
 	else
@@ -439,6 +440,7 @@
 
 	return ITEM_INTERACT_SUCCESS
 
+//Meli: Coin Weights are justified from a basic material density, g/cm^3. Assuming a 1-cm^3 coin.
 //GOLD
 /obj/item/coin/gold
 	name = "zenar"
@@ -447,7 +449,9 @@
 	sellprice = 10
 	base_type = CTYPE_GOLD
 	plural_name = "zenarii"
-	item_weight = 9 GRAMS
+	item_weight = 19 GRAMS //gold coins heavy yo
+	melting_material = /datum/material/gold
+	melt_amount = 5
 	pellet_type = /obj/item/ammo_casing/caseless/pelletshot/coin/zenar
 
 
@@ -460,6 +464,8 @@
 	base_type = CTYPE_SILV
 	plural_name = "ziliquae"
 	item_weight = 11 GRAMS
+	melting_material = /datum/material/silver
+	melt_amount = 5
 	pellet_type = /obj/item/ammo_casing/caseless/pelletshot/coin/zil
 
 
@@ -471,6 +477,9 @@
 	sellprice = 1
 	base_type = CTYPE_COPP
 	plural_name = "zennies"
+	item_weight = 9 GRAMS
+	melting_material = /datum/material/copper
+	melt_amount = 5
 	pellet_type = /obj/item/ammo_casing/caseless/pelletshot/coin/zenny
 
 /obj/item/coin/copper/pile/Initialize(mapload, coin_amount)
@@ -501,6 +510,9 @@
 	icon_state = "i1"
 	sellprice = 0
 	base_type = CTYPE_INQU
+	item_weight = 11 GRAMS
+	melting_material = /datum/material/silver
+	melt_amount = 5
 	plural_name = "katholikon denarii"
 
 /obj/item/coin/inqcoin/pile/Initialize()
