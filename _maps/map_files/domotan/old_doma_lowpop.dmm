@@ -11398,8 +11398,9 @@
 /turf/open/floor/blocks,
 /area/outdoors/exposed)
 "hcb" = (
-/obj/structure/fluff/walldeco/painting/flower,
-/turf/closed/wall/mineral/stone,
+/obj/structure/carpet/purple,
+/obj/structure/fake_machine/minting_press,
+/turf/open/floor/ruinedwood,
 /area/indoors/town/steward)
 "hcs" = (
 /turf/open/floor/ruinedwood/chevron,
@@ -73748,8 +73749,8 @@ ixV
 scq
 kvK
 kvK
+nFu
 hcb
-abf
 abf
 egR
 wHP
