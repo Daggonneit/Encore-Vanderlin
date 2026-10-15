@@ -222,7 +222,7 @@
 		A.update_appearance(UPDATE_OVERLAYS)
 	return ..()
 
-/obj/item/ingot/gold
+/obj/item/ingot/gold //bar of gold is roughly 634.5 cubic centimeters
 	name = "gold bar"
 	desc = "A bar of glittering gold."
 	icon_state = "ingotgold"
@@ -231,7 +231,7 @@
 	sellprice = M_GOLD
 	item_weight = 12.25 KILOGRAMS
 
-/obj/item/ingot/iron
+/obj/item/ingot/iron // roughly 635 cubic centimeters
 	name = "iron bar"
 	desc = "A bar of wrought iron."
 	icon_state = "ingotiron"
