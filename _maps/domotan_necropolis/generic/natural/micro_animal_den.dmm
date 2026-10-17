@@ -2,6 +2,9 @@
 "a" = (
 /turf/closed/mineral,
 /area/under/cave)
+"c" = (
+/turf/closed/mineral,
+/area/template_noop)
 "f" = (
 /obj/effect/spawner/map_spawner/necropolis/mob_spawner/animal,
 /turf/open/floor/dirt/road,
@@ -109,6 +112,70 @@ a
 a
 C
 a
+M
+M
+M
+"}
+
+(1,1,2) = {"
+M
+M
+M
+c
+c
+c
+c
+"}
+(2,1,2) = {"
+M
+c
+c
+c
+c
+c
+c
+"}
+(3,1,2) = {"
+c
+c
+c
+c
+c
+c
+c
+"}
+(4,1,2) = {"
+c
+c
+c
+c
+c
+c
+c
+"}
+(5,1,2) = {"
+c
+c
+c
+c
+c
+c
+c
+"}
+(6,1,2) = {"
+c
+c
+c
+c
+c
+M
+M
+"}
+(7,1,2) = {"
+c
+c
+c
+c
 M
 M
 M

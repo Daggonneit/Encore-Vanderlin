@@ -51,7 +51,7 @@
 	var/has_rot = FALSE
 	if(!was_zombie)
 		for(var/obj/item/bodypart/bodypart as anything in cast_on.bodyparts)
-			if(HAS_TRAIT(bodypart, TRAIT_ROTTEN))
+			if(HAS_TRAIT(bodypart, TRAIT_ROTTEN) || bodypart.germ_level >= INFECTION_LEVEL_ONE*0.2)
 				has_rot = TRUE
 				break
 		for(var/obj/item/organ/organs as anything in cast_on.internal_organs)
@@ -81,7 +81,7 @@
 
 	for(var/obj/item/organ/organs as anything in cast_on.internal_organs)
 		if(organs.germ_level >= INFECTION_LEVEL_ONE*0.2)
-			organs.set_germ_level(INFECTION_LEVEL_ONE*0.2)
+			organs.set_germ_level(0)
 
 	cast_on.update_body_parts(TRUE)
 	cast_on.visible_message("<span class='notice'>The rot leaves [cast_on]'s body!</span>", "<span class='green'>I feel the rot leave my body!</span>")

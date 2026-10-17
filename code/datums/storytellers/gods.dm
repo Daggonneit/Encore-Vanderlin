@@ -261,7 +261,7 @@
 			STATS_LUX_REVIVALS = list("name" = "Thauma revivals:", "points" = 16, "capacity" = 70),
 		),
 		"Set 4" = list(
-			STATS_ALIVE_MEDICATORS = list("name" = "Number of medicators:", "points" = 8, "capacity" = 70),
+			STATS_ALIVE_MEDICATORS = list("name" = "Number of vulturas:", "points" = 8, "capacity" = 70),
 		),
 		"Set 5" = list(
 			STATS_FOOD_ROTTED = list("name" = "Food rotted:", "points" = 0.175, "capacity" = 80),

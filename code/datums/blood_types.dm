@@ -56,7 +56,7 @@ GLOBAL_LIST_INIT_TYPED(blood_types, /datum/blood_type, init_subtypes_w_path_keys
 	blood_data["preferences"] = get_blood_prefs(sampled_from)
 	blood_data["vitae"] = vitae
 	if(blood_data["ckey"] && !(sampled_from.mind?.has_antag_datum(/datum/antagonist/vampire))) // double from players, vamps give half vitae though
-		blood_data["vitae"] *= 2
+		blood_data["vitae"] *= 4
 	return blood_data
 
 /datum/blood_type/proc/get_blood_prefs(mob/living/sampled_from)
@@ -183,7 +183,7 @@ GLOBAL_LIST_INIT_TYPED(blood_types, /datum/blood_type, init_subtypes_w_path_keys
 	used_table = /datum/chimeric_table/triton
 
 /datum/blood_type/human/medicator
-	name = "Medicator"
+	name = "Vultura"
 	used_table = /datum/chimeric_table/medicator
 
 /datum/blood_type/human/dwarf
@@ -222,18 +222,18 @@ GLOBAL_LIST_INIT_TYPED(blood_types, /datum/blood_type, init_subtypes_w_path_keys
 /datum/blood_type/human/corrupted/goblin
 	name = "Goblin"
 	used_table = /datum/chimeric_table/goblin
-	vitae = 750 VITAE
+	vitae = 0 VITAE
 
 /datum/blood_type/human/corrupted/orc
 	name = "Orc"
 	used_table = /datum/chimeric_table/orc
-	vitae = 1250 VITAE
+	vitae = 0 VITAE
 
 /datum/blood_type/human/corrupted/rousman
 	name = "Rousman"
 	used_table = /datum/chimeric_table/rousman
 	contains_lux = FALSE
-	vitae = 750 VITAE
+	vitae = 0 VITAE
 
 /datum/blood_type/human/corrupted/rousman/get_blood_prefs(mob/living/carbon/human/sampled_from)
 	. = ..()

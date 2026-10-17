@@ -28,46 +28,8 @@
 	accessory_type = /datum/sprite_accessory/tail/hawk
 
 /obj/item/organ/tail/medicator
-	name = "medicator plumage"
-	desc = "A foul smelling substance drips from the tips, even without its host."
+	name = "vultura plumage"
 	accessory_type = /datum/sprite_accessory/tail/medicator
-	var/datum/component/stillness_timer/stillness
-
-/obj/item/organ/tail/medicator/Destroy()
-	if(stillness)
-		QDEL_NULL(stillness)
-	return ..()
-
-/obj/item/organ/tail/medicator/on_mob_insert(mob/living/carbon/organ_owner, special, movement_flags)
-	. = ..()
-
-	if(!istype(owner, /mob/living/carbon/human/dummy))
-		stillness = owner.AddComponent(/datum/component/stillness_timer, 25 SECONDS, null, CALLBACK(src, PROC_REF(do_goop)))
-
-/obj/item/organ/tail/medicator/on_mob_remove(mob/living/carbon/organ_owner, special, movement_flags)
-	. = ..()
-
-	if(stillness)
-		QDEL_NULL(stillness)
-
-/obj/item/organ/tail/medicator/proc/do_goop()
-	if(!owner || QDELETED(src))
-		return
-	if(!isturf(owner.loc))
-		return
-	var/turf/owner_turf = owner.loc
-	if(locate(/obj/effect/decal/cleanable/greenglow) in owner_turf)
-		return
-	var/obj/effect/decal/cleanable/greenglow/mess = new(owner_turf)
-	mess.name = "goo"
-	var/matrix/goo_matrix = matrix()
-	goo_matrix.Scale(0.3)
-	goo_matrix.Turn(-60, 60)
-	mess.transform = goo_matrix
-	mess.pixel_x += rand(-5, 5)
-	mess.pixel_y += rand(-5, 5)
-
-	QDEL_IN(mess, 30 SECONDS)
 
 /obj/item/organ/tail/kobold
 	name = "small lizard tail"

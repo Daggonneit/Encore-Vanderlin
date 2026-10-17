@@ -103,6 +103,7 @@
 		"Warhammer" = /obj/item/weapon/mace/warhammer/steel,
 		"Polehammer" = /obj/item/weapon/polearm/eaglebeak,
 		"Sabre" = /obj/item/weapon/sword/sabre/dec,
+		"Greatsword" = /obj/item/weapon/sword/long/greatsword,
 	)
 
 	var/choice = spawned.select_equippable(player_client, selectable, message = "Choose Your Specialisation", title = "KNIGHT")
@@ -127,6 +128,9 @@
 			grant_shield = FALSE
 		if("Sabre")
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/royalknight/sabre)
+		if("Greatsword")
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/royalknight/longsword)
+			grant_shield = FALSE
 
 	if(grant_shield)
 		var/obj/item/weapon/shield/tower/metal/shield = new /obj/item/weapon/shield/tower/metal()

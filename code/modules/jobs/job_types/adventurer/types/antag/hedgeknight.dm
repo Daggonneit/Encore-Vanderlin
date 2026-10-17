@@ -23,7 +23,18 @@
 		/datum/attribute/skill/craft/weapon_repair = 20,
 		/datum/attribute/skill/craft/armor_repair = 20,
 	)
-
+/datum/attribute_holder/sheet/job/hedgeknight/polearms
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/polearms  = 10,
+	)
+/datum/attribute_holder/sheet/job/hedgeknight/axe
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/axesmaces = 10,
+	)
+/datum/attribute_holder/sheet/job/hedgeknight/spear
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/polearms = 10,
+	)
 /datum/job/advclass/bandit/hedgeknight //heavy knight class - just like black knight adventurer class. starts with heavy armor training and plate, but less weapon skills than brigand, sellsword and knave
 	title = "Hedge Knight"
 	tutorial = "A noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours."
@@ -42,6 +53,28 @@
 		TRAIT_DEADNOSE,
 	)
 
+/datum/job/advclass/bandit/brigand/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	var/static/list/weapons = list(
+		"Greataxe" = list(/obj/item/weapon/greataxe),
+		"Warhammer & Shield" = list(/obj/item/weapon/shield/heater, /obj/item/weapon/mace/warhammer),
+		"Greatsword" = list(/obj/item/weapon/sword/long/greatsword),
+		"Longsword" = list(/obj/item/weapon/sword/long)
+	)
+	var/weapon_choice = tgui_input_list(player_client,"CHOOSE YOUR WEAPON.", "ARMS TO SLAY THE OPPRESSORS", weapons)
+	switch(weapon_choice)
+		if("Greataxe")
+			spawned.put_in_hands(new /obj/item/weapon/greataxe)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/hedgeknight/axe)
+		if("Warhammer & Shield")
+			spawned.put_in_hands(new /obj/item/weapon/shield/heater)
+			spawned.put_in_hands(new /obj/item/weapon/mace/warhammer)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/hedgeknight/axe)
+		if("Greatsword")
+			spawned.put_in_hands(new /obj/item/weapon/sword/long/greatsword)
+		if("Longsword")
+			spawned.put_in_hands(new /obj/item/weapon/sword/long)
+		
 /datum/outfit/bandit/hedgeknight
 	name = "Hedge Knight (Bandit)"
 	head = /obj/item/clothing/head/helmet/heavy/rust/bandit

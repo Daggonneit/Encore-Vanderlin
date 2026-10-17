@@ -25,6 +25,15 @@
 		/datum/attribute/skill/craft/armor_repair = 20,
 	)
 
+/datum/attribute_holder/sheet/job/brigand/unarmed
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/unarmed = 10,
+	)
+/datum/attribute_holder/sheet/job/brigand/greatsword
+	raw_attribute_list = list(
+		/datum/attribute/skill/combat/swords = 20,
+	)
+
 /datum/job/advclass/bandit/brigand //Strength class, starts with axe or flails and medium armor training
 	title = "Brigand"
 	tutorial = "Cast from society, you use your powerful physical might and endurance to take from those who are weaker from you."
@@ -43,14 +52,39 @@
 
 /datum/job/advclass/bandit/brigand/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
-
 	var/static/list/weapons = list(
 		"Battleaxe & Cudgel" = list(/obj/item/weapon/axe/battle, /obj/item/weapon/mace/cudgel),
 		"Flail & Shield" = list(/obj/item/weapon/shield/wood, /obj/item/weapon/flail),
 		"Glaive" = list(/obj/item/weapon/polearm/halberd/bardiche/glaive),
+		"Warhammer & Shield" = list(/obj/item/weapon/shield/heater, /obj/item/weapon/mace/warhammer),
+		"Maul" = list(/obj/item/weapon/mace/goden/maul),
+		"Claws" = list(/obj/item/weapon/handclaw),
+		"Knuckledusters" = list(/obj/item/weapon/knuckles),
+		"Woodcutters Axe" = list(/obj/item/weapon/polearm/halberd/bardiche/woodcutter)
 	)
-
-	spawned.select_equippable(player_client, weapons, message = "Choose your weapon.", title = "TAKE UP ARMS.")
+	var/weapon_choice = tgui_input_list(player_client,"CHOOSE YOUR WEAPON.", "ARMS TO SLAY THE OPPRESSORS", weapons)
+	switch(weapon_choice)
+		if("Battleaxe & Cudgel")
+			spawned.put_in_hands(new /obj/item/weapon/axe/battle)
+			spawned.put_in_hands(new /obj/item/weapon/mace/cudgel)
+		if("Flail & Shield")
+			spawned.put_in_hands(new /obj/item/weapon/shield/wood)
+			spawned.put_in_hands(new /obj/item/weapon/flail)
+		if("Glaive")
+			spawned.put_in_hands(new /obj/item/weapon/polearm/halberd/bardiche/glaive)
+		if("Warhammer & Shield")
+			spawned.put_in_hands(new /obj/item/weapon/shield/heater)
+			spawned.put_in_hands(new /obj/item/weapon/mace/warhammer)
+		if("Maul")
+			spawned.put_in_hands(new /obj/item/weapon/mace/goden/maul)
+		if("Claws")
+			spawned.put_in_hands(new /obj/item/weapon/handclaw)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/brigand/unarmed)
+		if("Knuckledusters")
+			spawned.put_in_hands(new /obj/item/weapon/handclaw)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/brigand/unarmed)
+		if("Woodcutters Axe")
+			spawned.put_in_hands(new /obj/item/weapon/polearm/halberd/bardiche/woodcutter)
 
 /datum/outfit/bandit/brigand
 	name = "Brigand (Bandit)"

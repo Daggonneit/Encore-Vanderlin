@@ -1,0 +1,4 @@
+author: "kyres1"
+delete-after: True
+changes:
+  - bugfix: "Added roofs to the random templates in the County of Etgard."

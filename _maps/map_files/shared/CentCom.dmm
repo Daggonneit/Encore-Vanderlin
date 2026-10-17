@@ -1198,10 +1198,43 @@
 /area/indoors/lich)
 "ei" = (
 /obj/structure/rack,
-/obj/item/ammo_holder/quiver/bolts,
-/obj/item/gun/ballistic/bow/cross,
+/obj/item/reagent_containers/glass/bottle/strongmanapot/labelled{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/strongmanapot/labelled{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/strongmanapot/labelled{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/strongmanapot/labelled{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/stronghealthpot/labelled{
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/glass/bottle/stronghealthpot/labelled{
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/glass/bottle/stronghealthpot/labelled{
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/glass/bottle/stronghealthpot/labelled{
+	pixel_x = 7
+	},
+/obj/item/explosive/bottle/homemade,
+/obj/item/explosive/bottle/homemade,
+/obj/item/explosive/bottle/homemade,
+/obj/item/explosive/bottle/homemade,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
+"en" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/dirt/road,
+/area/outdoors/woods_safe)
 "ep" = (
 /obj/structure/fluff/walldeco/wallshield,
 /turf/closed/wall/mineral/craftstone,
@@ -2647,7 +2680,14 @@
 /area/indoors/lich)
 "nh" = (
 /obj/structure/rack,
-/obj/item/clothing/neck/coif,
+/obj/item/ammo_holder/dartpouch/darts,
+/obj/item/ammo_holder/dartpouch/darts,
+/obj/item/ammo_holder/dartpouch/darts,
+/obj/item/ammo_holder/dartpouch/darts,
+/obj/item/gun/ballistic/blowgun,
+/obj/item/gun/ballistic/blowgun,
+/obj/item/gun/ballistic/blowgun,
+/obj/item/gun/ballistic/blowgun,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "ni" = (
@@ -3771,10 +3811,10 @@
 /turf/open/floor/cobble,
 /area/indoors)
 "tj" = (
-/obj/structure/closet/crate/chest/old_crate,
-/obj/item/reagent_containers/powder/salt,
-/obj/item/reagent_containers/powder/salt,
-/turf/open/floor/dirt/road,
+/obj/structure/train/carriage/not_train/far_travel{
+	dir = 1
+	},
+/turf/open/floor/cobblerock,
 /area/outdoors/woods_safe)
 "tk" = (
 /obj/effect/decal/cobbleedge/alt{
@@ -4722,11 +4762,41 @@
 "yo" = (
 /obj/structure/rack,
 /obj/item/weapon/mace/cudgel,
+/obj/item/weapon/mace/cudgel,
+/obj/item/weapon/mace/cudgel,
+/obj/item/weapon/mace/cudgel,
+/obj/item/weapon/mace/steel/morningstar{
+	pixel_x = 6
+	},
+/obj/item/weapon/mace/steel/morningstar{
+	pixel_x = 6
+	},
+/obj/item/weapon/mace/steel/morningstar{
+	pixel_x = 6
+	},
+/obj/item/weapon/mace/steel/morningstar{
+	pixel_x = 6
+	},
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "yq" = (
 /obj/structure/rack,
-/obj/item/weapon/knife/dagger,
+/obj/item/clothing/wrists/bracers/leather/scabbard,
+/obj/item/clothing/wrists/bracers/leather/scabbard,
+/obj/item/clothing/wrists/bracers/leather/scabbard,
+/obj/item/clothing/wrists/bracers/leather/scabbard,
+/obj/item/weapon/scabbard/knife,
+/obj/item/weapon/scabbard/knife,
+/obj/item/weapon/scabbard/knife,
+/obj/item/weapon/scabbard/knife,
+/obj/item/weapon/scabbard/sword,
+/obj/item/weapon/scabbard/sword,
+/obj/item/weapon/scabbard/sword,
+/obj/item/weapon/scabbard/sword,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "yr" = (
@@ -4828,6 +4898,20 @@
 /obj/structure/closet/crate/crafted_closet,
 /obj/item/clothing/face/shepherd/rag,
 /obj/item/clothing/face/shepherd/rag,
+/obj/item/clothing/face/shepherd/rag,
+/obj/item/clothing/face/shepherd/rag,
+/obj/item/clothing/face/sack,
+/obj/item/clothing/face/sack,
+/obj/item/clothing/face/sack,
+/obj/item/clothing/face/sack,
+/obj/item/clothing/head/helmet/leather/hood_ominous,
+/obj/item/clothing/head/helmet/leather/hood_ominous,
+/obj/item/clothing/head/helmet/leather/hood_ominous,
+/obj/item/clothing/head/helmet/leather/hood_ominous,
+/obj/item/clothing/head/helmet/leather/volfhelm,
+/obj/item/clothing/head/helmet/leather/volfhelm,
+/obj/item/clothing/head/helmet/leather/volfhelm,
+/obj/item/clothing/head/helmet/leather/volfhelm,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "yR" = (
@@ -5396,12 +5480,23 @@
 /turf/open/floor/grass/yel,
 /area/outdoors)
 "Ch" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/item/flashlight/flare/torch/metal,
-/obj/item/flashlight/flare/torch/metal,
-/obj/item/flashlight/flare/torch/metal,
-/obj/item/flashlight/flare/torch/metal,
-/obj/item/flashlight/flare/torch/metal,
+/obj/structure/closet/crate/crafted_closet,
+/obj/item/clothing/neck/coif/cloth,
+/obj/item/clothing/neck/coif/cloth,
+/obj/item/clothing/neck/coif/cloth,
+/obj/item/clothing/neck/coif/cloth,
+/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/clothing/head/roguehood/studded,
+/obj/item/clothing/head/roguehood/studded,
+/obj/item/clothing/head/roguehood/studded,
+/obj/item/clothing/head/roguehood/studded,
+/obj/item/clothing/head/roguehood/leather/advanced,
+/obj/item/clothing/head/roguehood/leather/advanced,
+/obj/item/clothing/head/roguehood/leather/advanced,
+/obj/item/clothing/head/roguehood/leather/advanced,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "Cn" = (
@@ -6215,8 +6310,14 @@
 /area/latejoin_area)
 "Hs" = (
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/leather/headscarf,
-/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/ammo_holder/quiver/bolts,
+/obj/item/ammo_holder/quiver/bolts,
+/obj/item/ammo_holder/quiver/bolts,
+/obj/item/ammo_holder/quiver/bolts,
+/obj/item/gun/ballistic/bow/cross,
+/obj/item/gun/ballistic/bow/cross,
+/obj/item/gun/ballistic/bow/cross,
+/obj/item/gun/ballistic/bow/cross,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "Hu" = (
@@ -6273,8 +6374,14 @@
 /area/outdoors/woods/tutorial)
 "HH" = (
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/leather/hood_ominous,
-/obj/item/clothing/head/helmet/leather/hood_ominous,
+/obj/item/ammo_holder/quiver/arrows,
+/obj/item/ammo_holder/quiver/arrows,
+/obj/item/ammo_holder/quiver/arrows,
+/obj/item/ammo_holder/quiver/arrows,
+/obj/item/gun/ballistic/bow/long,
+/obj/item/gun/ballistic/bow/long,
+/obj/item/gun/ballistic/bow/long,
+/obj/item/gun/ballistic/bow/long,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "HI" = (
@@ -6397,7 +6504,26 @@
 /area/indoors/vampire_manor)
 "In" = (
 /obj/structure/rack,
-/obj/item/weapon/axe/iron,
+/obj/item/weapon/axe/battle,
+/obj/item/weapon/axe/battle,
+/obj/item/weapon/axe/battle,
+/obj/item/weapon/axe/battle,
+/obj/item/weapon/pick/warpick/steel{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/weapon/pick/warpick/steel{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/weapon/pick/warpick/steel{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/weapon/pick/warpick/steel{
+	pixel_x = 6;
+	pixel_y = -6
+	},
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "Io" = (
@@ -6692,6 +6818,12 @@
 /obj/structure/fluff/millstone,
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/tutorial)
+"JC" = (
+/obj/structure/train/carriage/not_train{
+	name = "far travel carriage"
+	},
+/turf/open/floor/dirt/road,
+/area/outdoors/woods_safe)
 "JF" = (
 /obj/structure/healingfountain,
 /turf/open/floor/concrete,
@@ -6717,7 +6849,7 @@
 /turf/closed/mineral/bedrock,
 /area/overlord_lair)
 "JQ" = (
-/obj/effect/decal/cleanable/blood,
+/obj/structure/toilet/filled,
 /turf/open/floor/cobble,
 /area/indoors/bandit_lair)
 "JR" = (
@@ -6932,9 +7064,12 @@
 /turf/open/floor/wood,
 /area/indoors)
 "Lp" = (
-/obj/structure/toilet,
-/turf/open/floor/cobble,
-/area/indoors/bandit_lair)
+/obj/structure/fluff/road_sign{
+	dir = 8;
+	name = "SOUTH - To Domotan Island, Heavenscoast"
+	},
+/turf/open/floor/dirt/road,
+/area/outdoors/woods_safe)
 "Lq" = (
 /obj/machinery/light/fueled/torchholder/c,
 /turf/open/floor/tile,
@@ -7048,7 +7183,17 @@
 /area/outdoors/bog/inhumen_camp)
 "Mc" = (
 /obj/structure/rack,
-/obj/item/clothing/head/helmet/leather/volfhelm,
+/obj/item/ammo_holder/quiver/bolts/poison{
+	pixel_x = 8
+	},
+/obj/item/ammo_holder/quiver/arrows/poison{
+	pixel_x = -6
+	},
+/obj/item/ammo_holder/dartpouch/poisondarts,
+/obj/item/paper{
+	name = "green stained parchment";
+	info = "FOR THE LOVE OF THE GODS! THESE AIN'T REGULAR QUIVERS, CHECK THE AMMO BEFORE YOU TAKE IT!"
+	},
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "Me" = (
@@ -7299,9 +7444,13 @@
 /area/outdoors/woods_safe)
 "NG" = (
 /obj/structure/rack,
-/obj/item/weapon/shield/wood,
-/obj/item/weapon/shield/wood,
 /obj/machinery/light/fueled/wallfire/candle/l,
+/obj/item/weapon/shield/heater,
+/obj/item/weapon/shield/heater,
+/obj/item/weapon/shield/heater,
+/obj/item/weapon/shield/tower,
+/obj/item/weapon/shield/tower,
+/obj/item/weapon/shield/tower,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "NM" = (
@@ -7542,7 +7691,7 @@
 /area/indoors/tutorial)
 "Pf" = (
 /obj/structure/rack,
-/obj/item/weapon/axe/stone,
+/obj/item/weapon/axe/steel,
 /turf/open/floor/dirt/road,
 /area/indoors/bandit_lair)
 "Ph" = (
@@ -9572,7 +9721,38 @@
 /area/outdoors)
 "Zh" = (
 /obj/structure/rack,
-/obj/item/weapon/sword/short,
+/obj/item/weapon/sword,
+/obj/item/weapon/sword,
+/obj/item/weapon/sword,
+/obj/item/weapon/sword,
+/obj/item/weapon/sword/short{
+	pixel_x = 6
+	},
+/obj/item/weapon/sword/short{
+	pixel_x = 6
+	},
+/obj/item/weapon/sword/short{
+	pixel_x = 6
+	},
+/obj/item/weapon/sword/short{
+	pixel_x = 6
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 6;
+	pixel_y = -5
+	},
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/bandit_lair)
 "Zj" = (
@@ -11409,7 +11589,7 @@ xt
 FR
 FR
 xt
-xt
+Lp
 xt
 Qy
 Qy
@@ -11494,14 +11674,14 @@ Te
 yR
 yR
 yR
-gJ
+IJ
 yR
 da
 da
 da
 yR
 We
-xt
+en
 Qy
 Qy
 Qy
@@ -11602,9 +11782,9 @@ GX
 Vl
 QB
 mp
-tj
 xt
 xt
+JC
 Qy
 Qy
 xt
@@ -11805,10 +11985,10 @@ yR
 QB
 dp
 dp
-QN
+mp
 Qy
 Qy
-Qy
+tj
 Qy
 Qy
 xt
@@ -12007,10 +12187,10 @@ Xe
 QZ
 yR
 JQ
-Lp
+dp
 dp
 mp
-RD
+xt
 xt
 xt
 Qy
@@ -12109,7 +12289,7 @@ yR
 yR
 yR
 da
-da
+QN
 mp
 yR
 FR
@@ -12210,8 +12390,8 @@ FR
 xt
 xt
 xt
-xt
 FR
+Qy
 FR
 xt
 xt
@@ -12313,8 +12493,8 @@ kM
 FR
 RD
 xt
-xt
-xt
+Qy
+Qy
 xt
 Qy
 Qy
@@ -12416,7 +12596,7 @@ FR
 FR
 xt
 xt
-xt
+Qy
 Qy
 Qy
 xt

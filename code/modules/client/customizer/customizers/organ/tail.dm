@@ -128,7 +128,7 @@
 	allows_disabling = FALSE
 
 /datum/customizer_choice/organ/tail/medicator
-	name = "Medicator Plumage"
+	name = "Vultura Plumage"
 	organ_type = /obj/item/organ/tail/medicator
 	allows_accessory_color_customization = TRUE
 	sprite_accessories = list(

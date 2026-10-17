@@ -28,7 +28,7 @@
 	create_reagents(100, DRAINABLE | AMOUNT_VISIBLE | DRAWABLE)
 	reagents.maximum_volume = 100
 	storage.max_total = 300
-	storage.max_types = 6
+	storage.max_types = 8
 	START_PROCESSING(SSobj, src)
 
 /obj/machinery/essence/cauldron_alchemy/Destroy()

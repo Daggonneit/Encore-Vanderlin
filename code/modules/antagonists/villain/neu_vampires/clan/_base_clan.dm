@@ -1,15 +1,17 @@
 GLOBAL_LIST_EMPTY_TYPED(vampire_clans, /datum/clan)	//>:3
 
 /datum/attribute_holder/sheet/job/clan
-	attribute_variance = list(
-		STAT_STRENGTH = list(1, 2)
-	)
 	clamped_adjustment = list(
 		/datum/attribute/skill/misc/athletics = list(50, 50),
 		/datum/attribute/skill/combat/unarmed = list(40, 40)
 	)
 	raw_attribute_list = list(
-		STAT_SPEED = 1,
+		STAT_STRENGTH = 4,
+		STAT_PERCEPTION = 2,
+		STAT_INTELLIGENCE = 2,
+		STAT_ENDURANCE = 2,
+		STAT_SPEED = 3,
+		STAT_FORTUNE = 2,
 		/datum/attribute/skill/magic/blood = 20
 	)
 

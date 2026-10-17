@@ -1,0 +1,6 @@
+author: "Alexeivichi"
+delete-after: True
+changes:
+  - rscadd: "specified blacklisting of armor chest pieces and headgear, the most important parts."
+  - rscdel: "full clothing/armor path blacklist"
+  - balance: "unique/special/great weapons illegal from the persistent saving system"

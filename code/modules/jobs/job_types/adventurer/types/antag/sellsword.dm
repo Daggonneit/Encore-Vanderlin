@@ -4,16 +4,16 @@
 		STAT_ENDURANCE = 3,
 		STAT_CONSTITUTION = 2,
 		STAT_SPEED = 2,
-		/datum/attribute/skill/combat/polearms = 50,
+		/datum/attribute/skill/combat/polearms = 40,
 		/datum/attribute/skill/combat/axesmaces = 20,
 		/datum/attribute/skill/combat/wrestling = 30,
 		/datum/attribute/skill/combat/unarmed = 30,
-		/datum/attribute/skill/combat/swords = 50,
+		/datum/attribute/skill/combat/swords = 40,
 		/datum/attribute/skill/combat/shields = 40,
 		/datum/attribute/skill/combat/whipsflails = 30,
 		/datum/attribute/skill/combat/knives = 20,
 		/datum/attribute/skill/combat/bows = 20,
-		/datum/attribute/skill/combat/crossbows = 50,
+		/datum/attribute/skill/combat/crossbows = 40,
 		/datum/attribute/skill/craft/crafting = 20,
 		/datum/attribute/skill/craft/carpentry = 10,
 		/datum/attribute/skill/misc/reading = 10,
@@ -48,7 +48,8 @@
 
 	var/static/list/weapons = list(
 		"Spear & Crossbow" = list(/obj/item/weapon/polearm/spear/billhook, /obj/item/gun/ballistic/bow/cross),
-		"Sword & Buckler" = list(/obj/item/weapon/sword, /obj/item/weapon/shield/tower/buckleriron)
+		"Sword & Buckler" = list(/obj/item/weapon/sword, /obj/item/weapon/shield/tower/buckleriron),
+		"Footman War Axe" = list(/obj/item/weapon/polearm/halberd/bardiche/warcutter)
 	)
 	var/weapon_choice = spawned.select_equippable(player_client, weapons, message = "Choose your weapon.", title = "TAKE UP ARMS.")
 	switch(weapon_choice)
@@ -57,7 +58,8 @@
 			spawned.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/kettle, ITEM_SLOT_HEAD, TRUE)
 		if("Sword & Buckler")
 			spawned.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallet, ITEM_SLOT_HEAD, TRUE)
-
+		if("Footman War Axe")
+			spawned.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallet, ITEM_SLOT_HEAD, TRUE)
 
 /datum/outfit/bandit/sellsword
 	name = "Sellsword (Bandit)"

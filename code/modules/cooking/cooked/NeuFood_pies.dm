@@ -442,6 +442,12 @@
 	nutrition = BUTTERDOUGHSLICE_NUTRITION + MINCE_NUTRITION
 	tastes = list("succulent meat" = 1)
 
+/obj/item/reagent_containers/food/snacks/foodbase/handpieraw/fishmince
+	w_class = WEIGHT_CLASS_NORMAL
+	foodtype = GRAIN | MEAT
+	nutrition = BUTTERDOUGHSLICE_NUTRITION + MINCE_NUTRITION
+	tastes = list("succulent fish" = 1)
+
 /obj/item/reagent_containers/food/snacks/foodbase/handpieraw/cheese
 	w_class = WEIGHT_CLASS_NORMAL
 	foodtype = GRAIN | DAIRY

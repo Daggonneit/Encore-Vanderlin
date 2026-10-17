@@ -22,6 +22,7 @@
 		/datum/supply_pack/storage/pouch,
 		/datum/supply_pack/tools/rope,
 		/datum/supply_pack/food/drinks/water,
+		/datum/supply_pack/food/drinks/water/luxury,
 		/datum/supply_pack/food/hardtack,
 		/datum/supply_pack/apparel/leather_belt,
 		/datum/supply_pack/rawmats/silk,

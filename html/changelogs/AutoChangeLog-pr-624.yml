@@ -1,0 +1,6 @@
+author: "crimsonFig"
+delete-after: True
+changes:
+  - bugfix: "fixes some references to pestra or malum to be erdl and golar khan respectively"
+  - bugfix: "fixes cure rot surgery to actually interact with infections reliably"
+  - bugfix: "fixes some cauldron recipes not being brewable due to max essence type not being compensated during overhaul"

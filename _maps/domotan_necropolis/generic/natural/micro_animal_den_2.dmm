@@ -29,6 +29,9 @@
 /obj/structure/flora/grass/thorn_bush,
 /turf/open/floor/dirt,
 /area/under/cave)
+"K" = (
+/turf/closed/mineral,
+/area/template_noop)
 "M" = (
 /obj/structure/flora/grass/herb/random,
 /turf/open/floor/dirt,
@@ -103,5 +106,69 @@ g
 g
 a
 a
+g
+"}
+
+(1,1,2) = {"
+g
+g
+g
+K
+K
+K
+g
+"}
+(2,1,2) = {"
+g
+g
+K
+K
+K
+K
+K
+"}
+(3,1,2) = {"
+g
+K
+K
+K
+K
+K
+K
+"}
+(4,1,2) = {"
+g
+K
+K
+K
+K
+K
+K
+"}
+(5,1,2) = {"
+g
+K
+K
+K
+K
+K
+K
+"}
+(6,1,2) = {"
+g
+K
+K
+K
+K
+K
+K
+"}
+(7,1,2) = {"
+g
+g
+g
+g
+K
+K
 g
 "}

@@ -1,5 +1,5 @@
 /datum/enchantment/malum_sight
-	enchantment_name = "Malum's Eye"
+	enchantment_name = "Golar Khan's Eye"
 	examine_text = "Through this I can see the sparkle of gemstones and ores."
 	essence_recipe = list(
 		/datum/thaumaturgical_essence/earth = 50,

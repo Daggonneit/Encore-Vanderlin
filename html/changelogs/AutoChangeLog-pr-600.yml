@@ -1,0 +1,4 @@
+author: "furrycactus"
+delete-after: True
+changes:
+  - bugfix: "Bumps down Sellsword's weaponskills to 40 instead of 50."

@@ -19,7 +19,7 @@
 		<br>
 		<b>Thusly:</b> You will first ensure the head of the body is attatched to its torso. To fail this is to deprive the spirit dearly.<br>
 		<br>
-		<b>Simultaneously:</b> Ensure the body has endured no great damage to its exterior, the interior is of no relevance. In this, the Pestrans may find some small use.<br>
+		<b>Simultaneously:</b> Ensure the body has endured no great damage to its exterior, the interior is of no relevance. In this, the Erdites may find some small use.<br>
 		<br>
 		<b>Next:</b> Bring the body to your holy yard, and place them over the pit in which you shall bury them. Place a copper coin in their mouth, so that they may retrieve it for their toll.<br>
 		Without this toll, the spirit risks an eternity seeking an alternative for the Ferryman. Even should you consider the deceased heretical or criminal, allow them at least to re-enter the cycle.<br>
