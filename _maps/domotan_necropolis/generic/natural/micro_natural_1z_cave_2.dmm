@@ -13,9 +13,15 @@
 "n" = (
 /turf/closed/mineral,
 /area/under/cave)
+"x" = (
+/turf/template_noop,
+/area/template_noop)
 "C" = (
 /turf/open/floor/dirt,
 /area/under/cave)
+"H" = (
+/turf/closed/mineral,
+/area/template_noop)
 "W" = (
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/dirt,
@@ -83,4 +89,68 @@ a
 a
 a
 a
+"}
+
+(1,1,2) = {"
+x
+x
+x
+x
+x
+x
+x
+"}
+(2,1,2) = {"
+x
+x
+x
+H
+H
+H
+x
+"}
+(3,1,2) = {"
+x
+H
+H
+H
+H
+H
+x
+"}
+(4,1,2) = {"
+x
+H
+H
+H
+H
+H
+x
+"}
+(5,1,2) = {"
+x
+H
+H
+H
+H
+H
+x
+"}
+(6,1,2) = {"
+x
+x
+H
+H
+H
+x
+x
+"}
+(7,1,2) = {"
+x
+x
+x
+x
+x
+x
+x
 "}

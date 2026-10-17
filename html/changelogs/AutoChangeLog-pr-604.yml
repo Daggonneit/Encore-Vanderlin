@@ -1,0 +1,4 @@
+author: "Meli"
+delete-after: True
+changes:
+  - bugfix: "Replaces turfs from noops to original grass and murk around the boghut blueprint."

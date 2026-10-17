@@ -1,6 +1,6 @@
 /datum/enchantment/pestra_gift
-	enchantment_name = "Pestra's Blessing"
-	examine_text = "A surgical implement worthy of Pestra."
+	enchantment_name = "Erdl's Blessing"
+	examine_text = "A surgical implement worthy of Erdl."
 	enchantment_color = "#036e23"
 	essence_recipe = list(
 		/datum/thaumaturgical_essence/life = 30,

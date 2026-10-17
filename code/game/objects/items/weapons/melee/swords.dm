@@ -664,6 +664,13 @@
 	desc = "A steel blade with a silver handle, intended to be concealed inside of a cane. This one bears a rontz on its pommel."
 	icon_state = "staffblade"
 
+/obj/item/weapon/sword/rapier/caneblade/merchant
+	name = "cane blade"
+	desc = "A steel blade with a gold handle and a large gem, intended to be concealed inside of a cane. This one is ridiculously ornate, at the expense of nearly all practicality."
+	icon = 'icons/roguetown/weapons/32/swords.dmi'
+	icon_state = "merchcaneblade"
+	wdefense = AVERAGE_PARRY
+
 //................ Lord's Rapier ............... //
 /obj/item/weapon/sword/rapier/dec/lord
 	name = "\proper lord's rapier"

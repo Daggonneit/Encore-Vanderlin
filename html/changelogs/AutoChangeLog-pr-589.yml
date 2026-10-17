@@ -1,0 +1,6 @@
+author: "PineappleMan929"
+delete-after: True
+changes:
+  - balance: "Vampire Lords now start a tier higher, giving them somewhat stat parity with Royal Knights."
+  - balance: "Increased the vitae gained from players."
+  - rscdel: "Removed vitae from goblins, orcs and rousmen."

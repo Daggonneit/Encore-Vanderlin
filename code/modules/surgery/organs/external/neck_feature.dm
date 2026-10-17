@@ -8,7 +8,7 @@
 	organ_efficiency = list(ORGAN_SLOT_NECK_FEATURE = 100)
 
 /obj/item/organ/neck_feature/medicator
-	name = "medicator fluff"
+	name = "vultura fluff"
 	desc = "It's slimy..."
 	accessory_type = /datum/sprite_accessory/neck_feature/fluff/medicator
 

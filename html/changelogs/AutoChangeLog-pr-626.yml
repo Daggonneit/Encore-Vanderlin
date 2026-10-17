@@ -1,0 +1,5 @@
+author: "crimsonFig"
+delete-after: True
+changes:
+  - rscdel: "Removed the gooping timer action from vultura tails"
+  - bugfix: "Fixed text referencing \"medicator\" to now say \"vultura\""

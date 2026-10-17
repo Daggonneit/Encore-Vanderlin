@@ -174,7 +174,7 @@
 
 /obj/item/clothing/head/helmet/heavy/bucket/keeper
 	name = "keeper's stone mask"
-	desc = "A hooded stone mask worn by Pestran keepers. Their face, oft marred by disease doth not hold value, for it is the pursuit of knowledge of the heartbeast that is the true cause."
+	desc = "A hooded stone mask worn by Erdite keepers. Their face, oft marred by disease doth not hold value, for it is the pursuit of knowledge of the heartbeast that is the true cause."
 	icon_state = "keeperhelm"
 	item_state = "keeperhelm"
 	// Best approximation for stone as we have no standard!

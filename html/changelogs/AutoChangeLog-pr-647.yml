@@ -1,0 +1,11 @@
+author: "kyres1"
+delete-after: True
+changes:
+  - rscadd: "Allows fishmince to be used for mince handpies."
+  - bugfix: "Fixes very silly mapping on Doma House 9."
+  - bugfix: "Fixes inconsistent mentions of Grenzelhoft, which does not exist here."
+  - bugfix: "Fixed the stockpile spitting out contents into an open air warehouse. Nothing should rot anymore here."
+  - rscadd: "Added a cargo lift to the trading guild."
+  - rscadd: "Added separate compartments that the stockpile deposits into."
+  - bugfix: "Adjusted outsider plot spawns in Heavenscoast so they do not get paved over by random templates."
+  - bugfix: "Deep ones no longer drop bugged meat when butchered."

@@ -32,6 +32,9 @@
 /obj/machinery/light/fueled/campfire,
 /turf/open/floor/dirt,
 /area/under/cave)
+"R" = (
+/turf/closed/mineral,
+/area/template_noop)
 
 (1,1,1) = {"
 a
@@ -93,6 +96,70 @@ x
 x
 v
 x
+a
+a
+"}
+
+(1,1,2) = {"
+a
+R
+R
+R
+R
+R
+a
+"}
+(2,1,2) = {"
+R
+R
+R
+R
+R
+R
+R
+"}
+(3,1,2) = {"
+R
+R
+R
+R
+R
+R
+R
+"}
+(4,1,2) = {"
+R
+R
+R
+R
+R
+R
+R
+"}
+(5,1,2) = {"
+R
+R
+R
+R
+R
+R
+R
+"}
+(6,1,2) = {"
+a
+R
+R
+R
+R
+R
+R
+"}
+(7,1,2) = {"
+a
+R
+R
+R
+R
 a
 a
 "}

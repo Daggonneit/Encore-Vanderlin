@@ -221,7 +221,7 @@
 	data += "<font color='#e7e3d9'><span class='bold'>Aasimar:</span></font> [GLOB.vanderlin_round_stats[STATS_ALIVE_AASIMAR]]<br>"
 	data += "<font color='#d49d7c'><span class='bold'>Hollowkins:</span></font> [GLOB.vanderlin_round_stats[STATS_ALIVE_HOLLOWKINS]]<br>"
 	data += "<font color='#99dfd5'><span class='bold'>Harpies:</span></font> [GLOB.vanderlin_round_stats[STATS_ALIVE_HARPIES]]<br>"
-	data += "<font color='#a0936b'><span class='bold'>Medicators:</span></font> [GLOB.vanderlin_round_stats[STATS_ALIVE_MEDICATORS]]<br>"
+	data += "<font color='#a0936b'><span class='bold'>Vulturas:</span></font> [GLOB.vanderlin_round_stats[STATS_ALIVE_MEDICATORS]]<br>"
 
 	data += "</div>"
 

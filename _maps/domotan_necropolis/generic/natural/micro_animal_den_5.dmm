@@ -3,6 +3,9 @@
 /obj/effect/spawner/map_spawner/necropolis/mob_spawner/animal,
 /turf/open/floor/dirt,
 /area/under/cave)
+"e" = (
+/turf/closed/mineral,
+/area/template_noop)
 "f" = (
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/dirt,
@@ -87,6 +90,70 @@ h
 h
 u
 u
+h
+h
+h
+h
+"}
+
+(1,1,2) = {"
+h
+e
+e
+e
+h
+h
+h
+"}
+(2,1,2) = {"
+e
+e
+e
+e
+e
+e
+e
+"}
+(3,1,2) = {"
+e
+e
+e
+e
+e
+e
+e
+"}
+(4,1,2) = {"
+e
+e
+e
+e
+e
+e
+e
+"}
+(5,1,2) = {"
+e
+e
+e
+e
+e
+e
+e
+"}
+(6,1,2) = {"
+e
+e
+e
+e
+e
+e
+h
+"}
+(7,1,2) = {"
+h
+e
+e
 h
 h
 h

@@ -1,0 +1,282 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/dirt,
+/area/template_noop)
+"b" = (
+/obj/effect/decal/cleanable/blood{
+	pixel_x = 15;
+	pixel_y = -5
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"d" = (
+/obj/effect/decal/cleanable/blood/wallsplatter,
+/turf/closed/wall/mineral/wood,
+/area/template_noop)
+"f" = (
+/mob/living/carbon/human/species/orc/npc/berserker,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"g" = (
+/turf/closed/wall/mineral/craftstone,
+/area/template_noop)
+"h" = (
+/turf/open/floor/dirt/road,
+/area/template_noop)
+"k" = (
+/obj/effect/decal/cleanable/blood/wallsplatter,
+/turf/closed/wall/window/openclose,
+/area/template_noop)
+"n" = (
+/obj/structure/table/wood/plain_alt,
+/obj/machinery/light/fueled/oven{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/obj/item/weapon/knife/cleaver{
+	pixel_x = -10;
+	pixel_y = 0
+	},
+/obj/item/kitchen/rollingpin{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"p" = (
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"q" = (
+/obj/effect/decal/cleanable/blood{
+	pixel_x = -15;
+	pixel_y = -3
+	},
+/mob/living/carbon/human/species/orc/npc/berserker,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"s" = (
+/obj/machinery/light/fueled/torchholder/metal_torch{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/mob/living/carbon/human/species/orc/npc/berserker,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"t" = (
+/turf/closed/wall/mineral/wood,
+/area/template_noop)
+"v" = (
+/obj/structure/closet/crate/drawer,
+/obj/item/storage/belt/pouch/coins/mid,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"w" = (
+/obj/structure/door,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"B" = (
+/turf/open/floor/grass,
+/area/template_noop)
+"E" = (
+/obj/structure/ladder,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"G" = (
+/obj/structure/bed,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"H" = (
+/obj/structure/chair/wood/alt{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/gibs/down{
+	pixel_x = -21;
+	pixel_y = 18
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"I" = (
+/turf/template_noop,
+/area/template_noop)
+"J" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass,
+/area/template_noop)
+"L" = (
+/obj/effect/mob_spawn/corpse/human{
+	brute_damage = 120
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/puddle,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"O" = (
+/obj/structure/chair/wood/alt,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/mob_spawn/corpse/human/random/pilgrim{
+	brute_damage = 120
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"R" = (
+/turf/closed/wall/mineral/wooddark,
+/area/template_noop)
+"U" = (
+/turf/closed/wall/window/openclose,
+/area/template_noop)
+"X" = (
+/obj/item/plate{
+	pixel_x = 9;
+	pixel_y = 0
+	},
+/obj/structure/table/wood/nice,
+/obj/item/plate{
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/obj/item/candle/yellow{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+"Y" = (
+/obj/machinery/light/fueled/torchholder/metal_torch{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/obj/structure/table/wood/plain_alt,
+/obj/item/reagent_containers/food/snacks/pie/cooked/apple/good{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/template_noop)
+
+(1,1,1) = {"
+a
+J
+J
+J
+J
+J
+a
+"}
+(2,1,1) = {"
+a
+R
+t
+U
+t
+R
+J
+"}
+(3,1,1) = {"
+J
+t
+E
+f
+p
+t
+J
+"}
+(4,1,1) = {"
+J
+t
+Y
+b
+p
+w
+h
+"}
+(5,1,1) = {"
+J
+g
+n
+L
+f
+t
+J
+"}
+(6,1,1) = {"
+a
+R
+t
+k
+t
+R
+B
+"}
+(7,1,1) = {"
+a
+J
+a
+J
+J
+J
+a
+"}
+
+(1,1,2) = {"
+I
+I
+I
+I
+I
+I
+I
+"}
+(2,1,2) = {"
+I
+R
+t
+d
+t
+R
+I
+"}
+(3,1,2) = {"
+I
+t
+E
+O
+X
+t
+I
+"}
+(4,1,2) = {"
+I
+t
+s
+q
+H
+U
+I
+"}
+(5,1,2) = {"
+I
+t
+G
+G
+v
+t
+I
+"}
+(6,1,2) = {"
+I
+R
+t
+t
+t
+R
+I
+"}
+(7,1,2) = {"
+I
+I
+I
+I
+I
+I
+I
+"}

@@ -28,6 +28,9 @@
 /obj/effect/spawner/map_spawner/loot/common,
 /turf/open/floor/dirt,
 /area/under/cave)
+"Q" = (
+/turf/closed/mineral,
+/area/template_noop)
 "S" = (
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/dirt,
@@ -91,6 +94,70 @@ s
 s
 a
 a
+s
+s
+s
+s
+"}
+
+(1,1,2) = {"
+s
+Q
+Q
+Q
+s
+s
+s
+"}
+(2,1,2) = {"
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+"}
+(3,1,2) = {"
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+"}
+(4,1,2) = {"
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+"}
+(5,1,2) = {"
+Q
+Q
+Q
+Q
+Q
+Q
+Q
+"}
+(6,1,2) = {"
+Q
+Q
+Q
+Q
+s
+Q
+s
+"}
+(7,1,2) = {"
+s
+Q
+Q
 s
 s
 s

@@ -37,7 +37,7 @@
 
 	var/mob/living/carbon/carbon_patient = patient
 	for(var/obj/item/bodypart/part as anything in carbon_patient.bodyparts)
-		if(HAS_TRAIT(part, TRAIT_ROTTEN))
+		if(HAS_TRAIT(part, TRAIT_ROTTEN) || part.germ_level >= INFECTION_LEVEL_ONE * 0.2)
 			return TRUE
 
 	for(var/obj/item/organ/organ as anything in carbon_patient.internal_organs)
@@ -90,7 +90,6 @@
 		part.receive_damage(burn = damage)
 
 	for(var/obj/item/organ as anything in patient.internal_organs)
-		if(organ.germ_level >= INFECTION_LEVEL_ONE * 0.2)
-			organ.set_germ_level(INFECTION_LEVEL_ONE * 0.2)
+		organ.set_germ_level(0)
 
 	patient.update_body_parts(TRUE)

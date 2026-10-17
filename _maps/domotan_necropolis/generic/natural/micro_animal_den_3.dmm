@@ -14,6 +14,9 @@
 /obj/structure/flora/grass/pyroclasticflowers,
 /turf/open/floor/dirt,
 /area/under/cave)
+"q" = (
+/turf/closed/mineral,
+/area/template_noop)
 "s" = (
 /obj/structure/flora/grass,
 /turf/open/floor/dirt,
@@ -102,5 +105,69 @@ L
 a
 a
 F
+L
+"}
+
+(1,1,2) = {"
+L
+L
+q
+q
+q
+q
+q
+"}
+(2,1,2) = {"
+L
+q
+q
+q
+q
+q
+q
+"}
+(3,1,2) = {"
+q
+q
+q
+q
+q
+q
+q
+"}
+(4,1,2) = {"
+q
+q
+q
+q
+q
+q
+q
+"}
+(5,1,2) = {"
+q
+q
+q
+q
+q
+q
+q
+"}
+(6,1,2) = {"
+L
+q
+q
+q
+q
+q
+L
+"}
+(7,1,2) = {"
+L
+q
+L
+q
+q
+q
 L
 "}

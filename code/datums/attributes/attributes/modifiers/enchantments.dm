@@ -1,5 +1,5 @@
 /datum/attribute_modifier/pestra_gift
-	id = "Pestra's Gift"
+	id = "Erdl's Gift"
 	attribute_list = list(
 		STAT_INTELLIGENCE = 1,
 		/datum/attribute/skill/misc/medicine = 5,

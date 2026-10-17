@@ -115,7 +115,7 @@
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/shelter/bog/witch)
 "gs" = (
-/obj/machinery/light/fueled/cauldron,
+/obj/machinery/essence/cauldron_alchemy,
 /turf/open/floor/hexstone,
 /area/indoors/shelter/bog/witch)
 "gC" = (
@@ -220,6 +220,10 @@
 /obj/machinery/essence/reservoir,
 /turf/open/floor/hexstone,
 /area/indoors/shelter/bog/witch)
+"lW" = (
+/obj/effect/abstract/property_noop,
+/turf/open/floor/dirt/road,
+/area/outdoors/bog/witch)
 "ms" = (
 /obj/structure/door/green{
 	name = "witch's room"
@@ -285,8 +289,8 @@
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/shelter/bog/witch)
 "oS" = (
-/turf/template_noop,
-/area/template_noop)
+/turf/open/floor/grass/mixyel,
+/area/outdoors/bog/witch)
 "pf" = (
 /obj/structure/table/optable,
 /turf/open/floor/hexstone,
@@ -395,6 +399,9 @@
 /obj/item/reagent_containers/glass/cup/skull,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/shelter/bog/witch)
+"xm" = (
+/turf/open/floor/dirt,
+/area/outdoors/bog/witch)
 "xC" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "mossyedge-w"
@@ -611,6 +618,9 @@
 "HM" = (
 /turf/open/floor/twig,
 /area/outdoors/bog/witch)
+"It" = (
+/turf/open/floor/dirt/road,
+/area/outdoors/bog/witch)
 "IA" = (
 /turf/closed/wall/mineral/wooddark/slitted,
 /area/indoors/shelter/bog/witch)
@@ -662,6 +672,9 @@
 /obj/structure/door/green,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/shelter/bog/witch)
+"Lw" = (
+/turf/open/water/swamp/deep,
+/area/outdoors/bog)
 "LW" = (
 /obj/structure/door/green,
 /obj/effect/mapping_helpers/access/keyset/other/bogwitch,
@@ -710,6 +723,10 @@
 "NI" = (
 /turf/closed/wall/mineral/stone/moss,
 /area/indoors/shelter/bog/witch)
+"NR" = (
+/obj/effect/abstract/property_noop,
+/turf/open/floor/grass/mixyel,
+/area/outdoors/bog/witch)
 "Om" = (
 /obj/structure/fluff/railing/tall/retaining{
 	dir = 1
@@ -819,6 +836,13 @@
 /obj/item/natural/feather,
 /turf/open/floor/hexstone,
 /area/indoors/shelter/bog/witch)
+"Sr" = (
+/obj/effect/abstract/property_noop,
+/turf/open/water/swamp/deep,
+/area/outdoors/bog)
+"SK" = (
+/turf/open/water/swamp,
+/area/outdoors/bog)
 "SO" = (
 /obj/structure/closet/crate/drawer{
 	pixel_y = 20
@@ -863,6 +887,10 @@
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /turf/open/floor/twig/platform,
 /area/indoors/shelter/bog/witch)
+"Uy" = (
+/obj/effect/abstract/property_noop,
+/turf/open/water/swamp,
+/area/outdoors/bog)
 "Vk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/door/green,
@@ -955,6 +983,10 @@
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/grass/mixyel,
 /area/outdoors/bog/witch)
+"Zo" = (
+/obj/effect/abstract/property_noop,
+/turf/open/floor/dirt,
+/area/outdoors/bog/witch)
 "ZX" = (
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /turf/open/floor/hexstone,
@@ -965,8 +997,8 @@
 /area/indoors/shelter/bog/witch)
 
 (1,1,1) = {"
-oS
-oS
+xm
+xm
 oS
 oS
 IA
@@ -978,14 +1010,14 @@ IA
 NI
 NI
 pp
-oS
-oS
-oS
-oS
-oS
+SK
+SK
+Lw
+SK
+SK
 "}
 (2,1,1) = {"
-oS
+xm
 oS
 oS
 oS
@@ -998,11 +1030,11 @@ VB
 gC
 bW
 pp
-oS
-oS
-oS
-oS
-oS
+It
+SK
+SK
+Lw
+SK
 "}
 (3,1,1) = {"
 oS
@@ -1018,11 +1050,11 @@ Lo
 ws
 ws
 NI
-oS
-oS
-oS
-oS
-oS
+xm
+It
+SK
+SK
+SK
 "}
 (4,1,1) = {"
 Zl
@@ -1042,7 +1074,7 @@ NI
 NI
 pp
 pp
-oS
+Sr
 "}
 (5,1,1) = {"
 Zl
@@ -1062,7 +1094,7 @@ pf
 dD
 ns
 pp
-oS
+Sr
 "}
 (6,1,1) = {"
 Zl
@@ -1082,7 +1114,7 @@ Vn
 Nv
 zK
 NI
-oS
+Uy
 "}
 (7,1,1) = {"
 Zl
@@ -1238,11 +1270,11 @@ aX
 Ty
 Wz
 Qy
-oS
-oS
-oS
-oS
-oS
+NR
+Zo
+lW
+lW
+Zo
 "}
 (15,1,1) = {"
 Zl
@@ -1258,18 +1290,18 @@ Nr
 Nr
 Nr
 IA
-oS
-oS
-oS
-oS
-oS
+NR
+Uy
+Uy
+lW
+Zo
 "}
 
 (1,1,2) = {"
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
 IA
 Nr
 Nr
@@ -1279,17 +1311,17 @@ IA
 SY
 nT
 za
-oS
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
+HC
 "}
 (2,1,2) = {"
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
 Me
 Cw
 Cw
@@ -1299,17 +1331,17 @@ Me
 eO
 BJ
 iO
-oS
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
+HC
 "}
 (3,1,2) = {"
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
 rY
 Dg
 Cw
@@ -1319,11 +1351,11 @@ rY
 sU
 BJ
 iO
-oS
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
+HC
 "}
 (4,1,2) = {"
 HC
@@ -1343,7 +1375,7 @@ zP
 zP
 zP
 zP
-oS
+HC
 "}
 (5,1,2) = {"
 HC
@@ -1363,7 +1395,7 @@ pp
 pp
 NI
 pp
-oS
+HC
 "}
 (6,1,2) = {"
 HC
@@ -1383,7 +1415,7 @@ Gt
 lp
 jA
 pp
-oS
+HC
 "}
 (7,1,2) = {"
 HC
@@ -1539,11 +1571,11 @@ bA
 Or
 wY
 Qy
-oS
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
+HC
 "}
 (15,1,2) = {"
 HC
@@ -1559,9 +1591,9 @@ Nr
 Nr
 Nr
 IA
-oS
-oS
-oS
-oS
-oS
+HC
+HC
+HC
+HC
+HC
 "}

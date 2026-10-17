@@ -49,7 +49,6 @@
 	meat = list(/obj/item/gear/metal = 2, /obj/item/ingot/thaumic = 3, /obj/item/ingot/steel = 2)
 
 	species_traits = list(
-		NO_UNDERWEAR,
 		NOTRANSSTING,
 		EYECOLOR,
 		HAIR,
@@ -137,8 +136,6 @@
 		OFFSET_ARMOR = list(0,1),\
 		OFFSET_UNDIES = list(0,1),\
 	)
-
-	actions = list()
 
 /datum/species/automaton/android/get_skin_list()
 	return sortList(list(

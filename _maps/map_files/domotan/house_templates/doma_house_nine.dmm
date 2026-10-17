@@ -20,6 +20,9 @@
 /obj/structure/rack/shelf/biggest,
 /obj/item/reagent_containers/glass/bowl,
 /obj/item/broom,
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town)
 "cH" = (
@@ -190,9 +193,6 @@
 /obj/item/natural/feather,
 /obj/item/natural/fibers,
 /obj/item/natural/cloth,
-/obj/machinery/light/fueled/wallfire/candle{
-	pixel_y = -32
-	},
 /turf/open/floor/tile,
 /area/indoors/town)
 "HG" = (
@@ -237,6 +237,14 @@
 	},
 /turf/open/floor/ruinedwood/two,
 /area/indoors/town)
+"QV" = (
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/door/bolt{
+	name = "House IX";
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/indoors/town)
 "Sa" = (
 /obj/structure/fake_machine/scomm/r,
 /turf/open/floor/ruinedwood/two,
@@ -256,6 +264,9 @@
 /area/indoors/town)
 "Wc" = (
 /obj/structure/bookcase/random,
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/tile,
 /area/indoors/town)
 "Wj" = (
@@ -284,14 +295,14 @@
 
 (1,1,1) = {"
 xW
-xB
+Ox
 Ox
 Ox
 Ox
 Ox
 "}
 (2,1,1) = {"
-YW
+xB
 vm
 DW
 Pz
@@ -342,7 +353,7 @@ YW
 (1,1,2) = {"
 YW
 YW
-DZ
+QV
 DZ
 YW
 YW
@@ -361,7 +372,7 @@ aE
 fY
 Jq
 Hd
-YW
+gH
 "}
 (4,1,2) = {"
 YW
@@ -369,7 +380,7 @@ YW
 BE
 jp
 Zz
-gH
+bL
 "}
 (5,1,2) = {"
 YW
@@ -377,7 +388,7 @@ YW
 gI
 gI
 VC
-bL
+gH
 "}
 (6,1,2) = {"
 PY

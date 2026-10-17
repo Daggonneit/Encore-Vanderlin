@@ -140,6 +140,12 @@
 	desc = "A decorated silver cane bearing a rontz at the top."
 	icon_state = "staffsheath"
 
+/obj/item/weapon/scabbard/cane/merchant
+	name = "merchant's cane"
+	desc = "An expensive cane, decorated with gold and inlaid with a gem. A symbol of great wealth for the owner. This one contains a concealed blade!"
+	icon_state = "merchcanesheath"
+
+
 /obj/item/weapon/scabbard/cane/apply_components()
 	. = ..()
 	AddComponent(/datum/component/storage/concrete/scabbard/sword)

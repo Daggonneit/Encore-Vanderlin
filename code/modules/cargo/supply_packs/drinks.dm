@@ -7,6 +7,12 @@
 	cost = 5
 	contains = /obj/item/reagent_containers/glass/bottle/water
 
+/datum/supply_pack/food/drinks/water/luxury
+	name = "'Luxury' Water Bottle"
+	cost = 6
+	contains = /obj/item/reagent_containers/glass/bottle/water/luxury
+
+
 /datum/supply_pack/food/drinks/beer
 	name = "Beer-In-A-Bottle"
 	cost = 8

@@ -1688,7 +1688,7 @@
 	icon_state = "susie"
 
 /datum/sprite_accessory/hair/head/medicator
-	name = "Base Medicator"
+	name = "Base Vultura"
 	abstract_type = /datum/sprite_accessory/hair/head/medicator
 	icon = 'icons/mob/sprite_accessory/hair/medicator.dmi'
 	specuse = list(SPEC_ID_MEDICATOR)

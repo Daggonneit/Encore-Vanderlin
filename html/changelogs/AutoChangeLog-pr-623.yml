@@ -1,0 +1,4 @@
+author: "CSBuccee"
+delete-after: True
+changes:
+  - refactor: "Added a density check for the ritual dagger to have it be identical to chalk and not be blocked by traversable structures like chairs, tables, or crops."

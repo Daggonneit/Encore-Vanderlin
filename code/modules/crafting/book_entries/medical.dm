@@ -107,7 +107,7 @@
 	return {"
 		<div>
 		<h2>Chimeric Organ Techniques</h2>
-		The Pestran tradition holds that the body is not a closed vessel but a living instrument,
+		The Erdite tradition holds that the body is not a closed vessel but a living instrument,
 		one that may be opened, reshaped, and made to accommodate that which does not naturally belong within it.
 		Chimeric surgery is the practical expression of this belief: the alteration of a living organ so that
 		foreign humors may be grafted directly into its structure and made to function as part of the whole.

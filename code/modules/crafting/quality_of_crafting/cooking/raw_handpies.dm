@@ -29,6 +29,18 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/handpieraw/mince
 	crafting_message = "add mince to the handpie"
 
+/datum/repeatable_crafting_recipe/cooking/handpie/fishmince
+	name = "Raw Fish Mince Handpie"
+
+	subtypes_allowed = TRUE
+	requirements = list(
+		/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1,
+		/obj/item/reagent_containers/food/snacks/piedough = 1,
+	)
+	starting_atom = /obj/item/reagent_containers/food/snacks/meat/mince/fish
+	output = /obj/item/reagent_containers/food/snacks/foodbase/handpieraw/mince
+	crafting_message = "add fish mince to the handpie"
+
 /datum/repeatable_crafting_recipe/cooking/handpie/berry
 	name = "Raw Berry Handpie"
 

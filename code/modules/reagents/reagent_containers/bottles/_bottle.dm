@@ -146,6 +146,13 @@ GLOBAL_LIST_INIT(wisdoms, file2list("strings/rt/wisdoms.txt"))
 	name = "water bottle"
 	list_reagents = list(/datum/reagent/water = 30)
 
+/obj/item/reagent_containers/glass/bottle/water/luxury
+	fancy = TRUE
+	auto_label = TRUE
+	auto_label_name = "Nortmidst Premium Glacier Water"
+	auto_label_desc = "A rare premium bottle of water from the melted glaciers of Nortmidst. Said to improve skin, health, and sight. Often priced highly, for the true nobility."
+	list_reagents = list(/datum/reagent/water = 30)
+
 /obj/item/reagent_containers/glass/bottle/ethanol
 	name = "ethanol bottle"
 	list_reagents = list(/datum/reagent/consumable/ethanol = 30)
