@@ -404,3 +404,55 @@
 	ui_category = "Held Item"
 
 	triumph_cost_permanent = 20
+
+/datum/loadout_item/iron_claymore
+	name = "Iron Claymore"
+	item_path = /obj/item/weapon/sword/long/greatsword/claymore/iron
+	ui_category = "Held Item"
+	triumph_cost_permanent = 40
+	loadout_flags = LOADOUT_FLAG_NO_RENT
+
+/datum/loadout_item/Killij_Scimitar
+	name = "Steel Killij Scimitar"
+	item_path = /obj/item/weapon/sword/long/rider
+	description = "A curved blade of Qadirid origin meaning 'curved one'. The standard sword that saw the conquest of the Qadirid continent and peoples."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 30
+
+/datum/loadout_item/longsword
+	name = "Steel Longsword"
+	item_path = /obj/item/weapon/sword/long
+	description = "A long hand-and-a-half blade, wielded by the virtuous and vile alike."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 20
+
+/datum/loadout_item/rapier
+	name = "Steel Rapier"
+	item_path = /obj/item/weapon/sword/rapier
+	description = "A duelist's weapon derived from western battlefield instruments, it features a tapered blade with a specialized stabbing tip."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 25
+
+/datum/loadout_item/Angrosian_Blade
+	name = "Silver Angrosian Blade"
+	item_path = /obj/item/weapon/sword/long/forgotten
+	description = "A silver blade of ancient design."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 30
+	loadout_flags = LOADOUT_FLAG_NO_RENT
+
+/datum/loadout_item/silver_shortsword
+	name = "Silver Short Sword"
+	item_path = /obj/item/weapon/sword/short/silver
+	description = "A short sword of silver."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 25
+	loadout_flags = LOADOUT_FLAG_NO_RENT
+
+/datum/loadout_item/gutsclaymore
+	name = "Berserker Sword"
+	item_path = /obj/item/weapon/sword/long/greatsword/gutsclaymore
+	description = "A huge sword constructed out of a slab of iron."
+	ui_category = "Held Item"
+	triumph_cost_permanent = 60
+	loadout_flags = LOADOUT_FLAG_NO_RENT
