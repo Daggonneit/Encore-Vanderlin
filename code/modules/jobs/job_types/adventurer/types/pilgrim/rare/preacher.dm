@@ -29,8 +29,8 @@
 	attribute_sheet = /datum/attribute_holder/sheet/job/pilgrim/preacher
 
 	traits = list(
-		TRAIT_PSYDONIAN_GRIT,
-		TRAIT_PSYDONITE,
+		TRAIT_ANGROSIAN_GRIT,
+		TRAIT_ANGROSIAN,
 		TRAIT_FOREIGNER
 	)
 
