@@ -448,11 +448,3 @@
 	ui_category = "Held Item"
 	triumph_cost_permanent = 25
 	loadout_flags = LOADOUT_FLAG_NO_RENT
-
-/datum/loadout_item/gutsclaymore
-	name = "Berserker Sword"
-	item_path = /obj/item/weapon/sword/long/greatsword/gutsclaymore
-	description = "A huge sword constructed out of a slab of iron."
-	ui_category = "Held Item"
-	triumph_cost_permanent = 60
-	loadout_flags = LOADOUT_FLAG_NO_RENT
