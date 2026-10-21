@@ -15,7 +15,7 @@
 	//playsound(owner, 'sound/magic/staff_healing.ogg', 50, TRUE)
 
 	target.adjust_stamina(-20)
-	target.adjust_energy(-20)
+	target.adjust_energy(20)
 
 /datum/action/cooldown/spell/essence/refresh/spell
 	name = "Reinvigorate"
