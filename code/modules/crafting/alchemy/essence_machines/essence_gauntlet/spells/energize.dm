@@ -14,8 +14,8 @@
 
 	if(istype(target, /mob/living))
 		var/mob/living/L = target
-	target.adjust_stamina(-20, internal_regen=FALSE)
-	target.adjust_energy(20)
+		L.adjust_stamina(30)
+		L.adjust_energy(30)
 
 	if(istype(target, /obj/structure/mana_pylon))
 		var/obj/structure/mana_pylon/pylon = target
