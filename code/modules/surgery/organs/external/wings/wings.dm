@@ -14,3 +14,13 @@
 /obj/item/organ/wings/dracon
 	name = "drakian wings"
 	desc = "A pair of majestic drakian wings."
+
+/obj/item/organ/wings/dracon/on_mob_insert(mob/living/carbon/organ_owner, special = FALSE, movement_flags)
+	..()
+	ADD_TRAIT(organ_owner, TRAIT_NOFALLDAMAGE1, "[type]")
+	ADD_TRAIT(organ_owner, TRAIT_ZJUMP, "[type]")
+
+/obj/item/organ/wings/dracon/on_mob_remove(mob/living/carbon/organ_owner, special = FALSE, movement_flags)
+	REMOVE_TRAIT(organ_owner, TRAIT_NOFALLDAMAGE1, "[type]")
+	REMOVE_TRAIT(organ_owner, TRAIT_ZJUMP, "[type]")
+	..()

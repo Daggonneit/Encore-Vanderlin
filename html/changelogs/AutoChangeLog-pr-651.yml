@@ -1,0 +1,6 @@
+author: "crimsonFig"
+delete-after: True
+changes:
+  - rscadd: "adds a basic essence reservoir tank for starting out to reduce round start prep time"
+  - bugfix: "fixed essence splitter not reaching code to give the final tier reward when earned"
+  - map: "adds reservoirs to clinic, RP lab, and boghut"

@@ -182,7 +182,7 @@
 /turf/open/floor/rooftop/green,
 /area/indoors/shelter/bog/witch)
 "jA" = (
-/obj/machinery/essence/reservoir,
+/obj/machinery/essence/reservoir/filled/basics,
 /obj/structure/table/wood/large_new{
 	dir = 4;
 	icon_state = "alt_largetable"

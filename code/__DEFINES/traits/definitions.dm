@@ -40,6 +40,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 // ************* mob traits
 
+/// Character Override for sprite's bust presentation
+#define TRAIT_TOGGLEBUST "Chest Bust Overridden"
 /// Prevents voluntary movement.
 #define TRAIT_IMMOBILIZED "immobilized"
 /// Buckling yourself to objects with this trait won't immobilize you

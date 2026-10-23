@@ -459,8 +459,6 @@ SUBSYSTEM_DEF(housing)
 
 	for(var/turf/T in block(locate(minx, miny, minz), locate(maxx, maxy, maxz)))
 		for(var/mob/M in T.contents)
-			if(M == user)
-				continue
 			if(M.client)
 				return TRUE
 	return FALSE
@@ -541,6 +539,13 @@ SUBSYSTEM_DEF(housing)
 	valid_jobs += typesof(/datum/job/advclass/bandit)
 	valid_jobs += typesof(/datum/job/advclass/adventurer)
 	valid_jobs += typesof(/datum/job/advclass/combat)
+
+/obj/structure/sign/property_sign/claim/magic_apprentice//For magician apprentices
+	name = "Student's Instancer Crystal"
+
+/obj/structure/sign/property_sign/claim/magic_apprentice/Initialize(mapload)
+	. = ..()
+	valid_jobs += typesof(/datum/job/mageapprentice)
 
 /obj/structure/sign/property_sign/claim/proc/check_job_access(mob/user)
 	if(user.job_type in valid_jobs)

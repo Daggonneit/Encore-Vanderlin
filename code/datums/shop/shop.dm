@@ -69,8 +69,8 @@
 		if(item && (item.loadout_flags & LOADOUT_FLAG_NO_EQUIP))
 			continue
 		clean_equipped += path_str
-	if(length(clean_equipped) > 3)
-		clean_equipped = clean_equipped.Copy(1, 4)
+	if(length(clean_equipped) > 6)
+		clean_equipped = clean_equipped.Copy(1, 7)
 	equipped_loadout = clean_equipped
 	return TRUE
 
@@ -84,7 +84,7 @@
 
 	var/slot = 1
 	for(var/path_str in player.prefs.equipped_loadout)
-		if(slot > 3)
+		if(slot > 6)
 			break
 		var/datum/loadout_item/item = GLOB.loadout_items[text2path(path_str)]
 		if(!item)
@@ -102,7 +102,7 @@
 		slot++
 
 	for(var/path_str in player.prefs.single_round_loadout)
-		if(slot > 3)
+		if(slot > 6)
 			break
 		if(path_str in player.prefs.equipped_loadout)
 			continue
@@ -280,9 +280,9 @@
 		))
 	data["available_colors"] = colors_list
 
-	// Equipped slots (ordered, always 3 entries)
+	// Equipped slots (ordered, always 3 entries - changed to 6 to accommodate loadout for Domotan)
 	var/list/slots = list()
-	for(var/i in 1 to 3)
+	for(var/i in 1 to 6)
 		var/path_str = (length(owner.prefs.equipped_loadout) >= i) \
 			? owner.prefs.equipped_loadout[i] : null
 		if(path_str)
@@ -638,8 +638,8 @@
 		to_chat(owner.mob, span_warning("You don't meet the requirements for [item.name]."))
 		return FALSE
 	var/used = length(owner.prefs.equipped_loadout) + length(owner.prefs.single_round_loadout)
-	if(used >= 3)
-		to_chat(owner.mob, span_warning("All 3 loadout slots are in use."))
+	if(used >= 6)
+		to_chat(owner.mob, span_warning("All 6 loadout slots are in use."))
 		return FALSE
 	if(CEILING(item.triumph_cost_permanent * 0.05, 1) > 0 && !(owner.is_donator() && !(item.loadout_flags & LOADOUT_FLAG_NO_DONATOR_FREE)))
 		var/balance = get_triumph_amount(owner.ckey)
@@ -666,8 +666,8 @@
 		to_chat(owner.mob, span_warning("[item.name] cannot be equipped as a loadout slot item."))
 		return FALSE
 	var/used = length(owner.prefs.equipped_loadout) + length(owner.prefs.single_round_loadout)
-	if(used >= 3)
-		to_chat(owner.mob, span_warning("All 3 loadout slots are in use."))
+	if(used >= 6)
+		to_chat(owner.mob, span_warning("All 6 loadout slots are in use."))
 		return FALSE
 	owner.prefs.equipped_loadout += path_str
 	return TRUE

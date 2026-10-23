@@ -92,7 +92,7 @@
 	 * Males use female clothes, offsets and damage icons.
 	 * Importantly males still use male limb icons.
 	 * This does not effect stats or inherent traits/skills.
-	 * Males will not get boob overlays from this.
+	 * Males are allowed boob overlays from this.
 	 */
 	var/swap_male_clothes = FALSE
 	/**
@@ -935,22 +935,16 @@
 		var/hide_top = FALSE
 		var/hide_bottom = FALSE
 		var/obj/item/clothing/w_armor = H.wear_armor
-		if(w_armor)
-			hide_top = w_armor.flags_inv & (HIDEBOOB | HIDEUNDIESTOP)
-			hide_bottom = w_armor.flags_inv & (HIDEUNDIESBOT)
-
 		var/obj/item/clothing/w_shirt = H.wear_shirt
-		if(w_shirt)
-			hide_top = w_shirt.flags_inv & (HIDEBOOB |HIDEUNDIESTOP)
-			hide_bottom = w_shirt.flags_inv & ( HIDEUNDIESBOT)
+		var/obj/item/clothing/w_cloak = H.cloak
+		if((w_armor?.flags_inv & (HIDEBOOB | HIDEUNDIESTOP)) || (w_shirt?.flags_inv & (HIDEBOOB | HIDEUNDIESTOP)) || (w_cloak?.flags_inv & (HIDEBOOB | HIDEUNDIESTOP)))
+			hide_top = TRUE
+		// DOMOTAN SAYS BOTTOM UNDERWEAR FOR LIFE.
+		// if((w_armor?.flags_inv & (HIDEUNDIESBOT)) || (w_shirt?.flags_inv & (HIDEUNDIESBOT)) || (w_cloak?.flags_inv & (HIDEUNDIESBOT)) || (H.wear_pants?.flags_inv & (HIDEUNDIESBOT)))
+		// 	hide_bottom = TRUE
 
-		var/obj/item/clothing/w_cloak = H.wear_shirt
-		if(w_cloak)
-			hide_top = w_cloak.flags_inv & (HIDEBOOB | HIDEUNDIESTOP)
-			hide_bottom = w_cloak.flags_inv & (HIDEUNDIESBOT)
-
-		if(H.wear_pants)
-			hide_bottom = H.wear_pants.flags_inv & HIDEUNDIESBOT
+		// if no (shirt or armor) and female, make sure we add a bra later
+		var/no_streaking_tax = H.gender == FEMALE && !(w_shirt || w_armor)
 
 		if(H.underwear)
 			if(H.age == AGE_CHILD)
@@ -984,8 +978,9 @@
 						underwear_emissive.pixel_y = underwear_overlay.pixel_y
 						underwear_emissive.pixel_x = underwear_overlay.pixel_x
 						standing += underwear_emissive
-
-				if(!hide_top && H.gender == FEMALE)
+				// if youre not hiding the top and youre woman and you're not toggling your bust flat, wear a bra
+				// if no_streaking_tax is active, you need a bra still
+				if((H.gender == FEMALE && !hide_top && !HAS_TRAIT(H, TRAIT_TOGGLEBUST)) || no_streaking_tax)
 					underwear_overlay = mutable_appearance(underwear.icon, "[underwear.icon_state]_boob", -BODY_LAYER)
 					if(LAZYACCESS(offsets, OFFSET_UNDIES))
 						underwear_overlay.pixel_x += offsets[OFFSET_UNDIES][1]

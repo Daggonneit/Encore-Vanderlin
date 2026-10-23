@@ -332,7 +332,7 @@ const LoadoutItemRow = ({
   slotsUsed: number;
   donator: BooleanLike;
 }) => {
-  const slotsFull = slotsUsed >= 3;
+  const slotsFull = slotsUsed >= 6;
   const owned = !!item.owned;
   const equipped = !!item.equipped;
   const rented = !!item.rented;

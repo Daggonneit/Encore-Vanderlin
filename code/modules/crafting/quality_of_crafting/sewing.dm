@@ -430,6 +430,13 @@
 	craftdiff = 2
 	category = "Hat"
 
+/datum/repeatable_crafting_recipe/sewing/bonnet
+	name = "bonnet"
+	requirements = list(/obj/item/natural/cloth = 2, /obj/item/natural/fibers = 1,)
+	output = /obj/item/clothing/head/bonnet
+	craftdiff = 2
+	category = "Hat"
+
 /datum/repeatable_crafting_recipe/sewing/archercap
 	name = "archer's cap"
 	requirements = list(/obj/item/natural/cloth = 1, /obj/item/natural/fibers = 1,)

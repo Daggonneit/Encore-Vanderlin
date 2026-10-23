@@ -1,0 +1,5 @@
+author: "crimsonFig"
+delete-after: True
+changes:
+  - rscadd: "adds a toggle button in the client verbs for `Toggle Chest Alt`"
+  - bugfix: "fixed original hideboob code to properly hide under sprite stuff from sticking out"

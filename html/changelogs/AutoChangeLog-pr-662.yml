@@ -1,0 +1,7 @@
+author: "Meli"
+delete-after: True
+changes:
+  - bugfix: "Adds material and melt amounts to coins so they can be melted into bars."
+  - bugfix: "Changes the weight of coins so that they more closely scale to IRL density, assuming a completely isotropic, non-alloyed coin."
+  - rscadd: "MINTING PRESS. This should be mapped in, but it's basically a reskinned headeater that only accepts silver, copper, and gold. Gives 20 coins per bar, as it takes 20 coins to make one bar."
+  - rscadd: "Adds copper values to the economy file for items."

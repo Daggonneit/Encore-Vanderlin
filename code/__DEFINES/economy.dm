@@ -17,10 +17,11 @@
 #define M_SALT		4	// one salt, or raw ore, or coal
 #define M_LEATHER	M_CLOTH * 2 // one hide
 #define M_IRON		12	// one iron bar  Twelve is a good number for it can be halved, cut in three and four without fractions. Multiples of 6
+#define M_COPPER	M_IRON/2	// one copper bar value of 6, 20 coins = 20, not worth minting, .3 value
 #define M_STEEL		M_IRON+W_MODERATE	// one steel bar
-#define M_SILVER	M_IRON*3	// one silver bar
-#define M_GOLD		M_IRON*5	// one gold bar
-#define M_BLACKSTEEL	M_IRON*7	// one blacksteel bar
+#define M_SILVER	M_IRON*4	// one silver bar, from 3 to 4, value of 48, 20 coins = 100 .48 value.
+#define M_GOLD		M_IRON*8	// one gold bar from 5 to 8 value of 96, 20 coins = 200 .48 value.
+#define M_BLACKSTEEL	M_IRON*10	// one blacksteel bar
 
 // Skill costs - a rarity value add, items requiring a high skill to produce are rarer and has more intrinsic value. So craftsmen can make a profit.
 #define SKILL_1		2
@@ -55,6 +56,9 @@
 #define VALUE_IRON_ITEM			M_IRON+W_MINOR
 #define VALUE_STEEL_SMALL_ITEM	VALUE_STEEL_ITEM/2
 #define VALUE_STEEL_ITEM		M_STEEL+W_MINOR
+#define VALUE_COPPER_TINY_ITEM	M_COPPER/3+W_MINOR/3
+#define VALUE_COPPER_SMALL_ITEM M_COPPER/2
+#define VALUE_COPPER_ITEM		M_COPPER+W_MINOR
 #define VALUE_SILVER_TINY_ITEM	M_SILVER/3+W_MODERATE/3
 #define VALUE_SILVER_ITEM		M_SILVER+W_MODERATE
 #define VALUE_GOLD_TINY_ITEM	M_GOLD/3+W_MODERATE/3

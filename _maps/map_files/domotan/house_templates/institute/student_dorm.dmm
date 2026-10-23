@@ -1,0 +1,113 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/carpet/green,
+/obj/structure/chair/stool,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"b" = (
+/obj/structure/rack/shelf/biggest,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"k" = (
+/obj/structure/carpet/green,
+/obj/structure/mirror/fancy,
+/obj/structure/closet/crate/drawer,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"l" = (
+/obj/structure/sign/property_sign/claim/magic_apprentice,
+/turf/closed/wall/mineral/stone,
+/area/indoors/town/keep/magician)
+"n" = (
+/obj/structure/carpet/green,
+/obj/structure/closet/crate/crafted_closet/inn,
+/obj/effect/spawner/guaranteed_map_spawner/listed/clothes,
+/obj/item/clothing/shirt/robe/colored/purple,
+/obj/item/clothing/head/wizhat/random,
+/obj/item/clothing/head/wizhat/witch,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"o" = (
+/obj/structure/chair/wood/alt/chair_noble/red{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"t" = (
+/turf/closed/wall/mineral/wood,
+/area/indoors/town/keep/magician)
+"y" = (
+/obj/structure/window/openclose{
+	dir = 4
+	},
+/obj/structure/curtain/cyancurtain/dir{
+	dir = 4
+	},
+/turf/open/floor/twig,
+/area/indoors/town/keep/magician)
+"E" = (
+/obj/structure/bed/wool,
+/obj/structure/bed/wool{
+	pixel_y = 12
+	},
+/obj/structure/curtain/bounty{
+	color = "grey"
+	},
+/obj/machinery/light/fueled/wallfire/candle,
+/turf/open/floor/ruinedwood/darker,
+/area/indoors/town/keep/magician)
+"H" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/natural/feather,
+/obj/item/paper/scroll,
+/obj/structure/fake_machine/scomm/l,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"I" = (
+/turf/closed/wall/mineral/stone,
+/area/indoors/town/keep/magician)
+"J" = (
+/obj/structure/door/weak/bolt{
+	dir = 8;
+	name = "Student Dormitory"
+	},
+/turf/open/floor/twig,
+/area/indoors/town/keep/magician)
+"O" = (
+/obj/structure/carpet/green,
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+"X" = (
+/turf/open/floor/wood,
+/area/indoors/town/keep/magician)
+
+(1,1,1) = {"
+y
+y
+t
+"}
+(2,1,1) = {"
+k
+a
+H
+"}
+(3,1,1) = {"
+n
+O
+o
+"}
+(4,1,1) = {"
+E
+O
+X
+"}
+(5,1,1) = {"
+b
+X
+X
+"}
+(6,1,1) = {"
+l
+J
+I
+"}
