@@ -286,7 +286,6 @@
 	wbalance = VERY_EASY_TO_DODGE // heavier than higher-quality hammers
 	minstr = 8
 	toolspeed = 1
-	slowdown = 1
 
 	gripsprite = TRUE
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_BACK
@@ -321,7 +320,6 @@
 	wbalance = EASY_TO_DODGE
 	toolspeed = 1
 	item_weight = 6 KILOGRAMS
-	slowdown = 1
 
 /obj/item/weapon/hammer/sledgehammer/war/golerkanh
 	name = "forgefiend"
@@ -332,10 +330,9 @@
 	force_wielded = DAMAGE_HAMMER_WIELD + 5
 	wdefense = GOOD_PARRY
 	wbalance = EASY_TO_DODGE
-	max_integrity = INTEGRITY_STRONGEST * 1.2
+	max_integrity = INTEGRITY_STRONGEST * 1.4
 	minstr = 10
 	item_weight = 8 KILOGRAMS
-	slowdown = 1
 
 	pixel_y = -16
 	pixel_x = -16
