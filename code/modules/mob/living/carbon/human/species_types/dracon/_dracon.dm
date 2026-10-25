@@ -10,7 +10,10 @@
 /datum/attribute_holder/sheet/job/species/dracon
 	raw_attribute_list = list(
 		STAT_STRENGTH = 1,
+		STAT_CONSTITUTION = 2,
+		STAT_INTELLIGENCE = 1,
 		STAT_ENDURANCE = -1,
+		STAT_SPEED = -2
 	)
 
 /datum/species/dracon
@@ -19,14 +22,15 @@
 	multiple_accents = list(
 		"No Accent" = ACCENT_NONE,
 	)
-	desc = "Mighty scaled individuals who claim to be descendant from the dragons of yore, through a myriad of different legends none of them can quite agree on. \
-	Proud and well-respected throughout the Goblet, and incredibly long-lived. Elderly Drakians either become kindly fonts of wisdom or the most rapacious bastards \
+	desc = "Mighty scaled individuals who claim to be descendants from the dragons of yore, through a myriad of different legends none of them can quite agree on. \
+	Proud and well-respected throughout the Goblet, they are incredibly long-lived. Elderly Drakians either become kindly fonts of wisdom or the most rapacious bastards \
 	with an ego thrice their size.<br> \
-	+1 Strength, -1 Endurance."
+	+1 Strength, +1 Intelligence, +2 Constitution, -1 Endurance, -2 Speed; <br> \
+	Wings allow for jumping onto elevated surfaces and resisting fall damage, Heat Resistant, Cannot be ignited by mundane fire, Can speak Draconic."
 
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR, LIPS, STUBBLE, CUSCOLORS)
-	inherent_traits = list(TRAIT_NOMOBSWAP)
+	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_NOFIRE, TRAIT_RESISTHEAT)
 	use_skintones = TRUE
 
 	possible_ages = ALL_AGES_LIST

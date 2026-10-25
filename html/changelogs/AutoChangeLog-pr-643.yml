@@ -1,0 +1,7 @@
+author: "Minomato"
+delete-after: True
+changes:
+  - balance: "new Drakian attribute modifiers: +1 Strength, +1 Intelligence, +2 Constitution, -1 Endurance, -2 Speed"
+  - balance: "Drakians wings now allow for jumping onto elevated surfaces and resisting fall damage."
+  - balance: "added traits for Drakians: TRAIT_NOFIRE and TRAIT_RESISTHEAT"
+  - bugfix: "updated Drakian species description to include changes & mention draconic language feature."

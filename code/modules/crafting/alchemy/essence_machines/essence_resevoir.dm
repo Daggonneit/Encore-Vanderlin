@@ -282,3 +282,14 @@
 
 /obj/machinery/essence/reservoir/filled/motion
 	essence_list = list(/datum/thaumaturgical_essence/motion = 1000)
+
+/obj/machinery/essence/reservoir/filled/basics
+	essence_list = list(
+		/datum/thaumaturgical_essence/life = 150,
+		/datum/thaumaturgical_essence/order = 200,
+		/datum/thaumaturgical_essence/chaos = 200,
+		/datum/thaumaturgical_essence/water = 200,
+		/datum/thaumaturgical_essence/fire = 200,
+		/datum/thaumaturgical_essence/earth = 200,
+		/datum/thaumaturgical_essence/air = 200,
+	)

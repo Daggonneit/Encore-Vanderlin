@@ -959,12 +959,16 @@ GLOBAL_PROTECT(no_child_icons)
 	var/list/cloaklays
 	var/datum/species/species = dna?.species
 
+	// if cloak needs shorter chest, ensure all clothing under are forced to hideboob
 	var/use_female_sprites = FALSE
 	if(species?.sexes)
-		if(gender == FEMALE && !species.swap_female_clothes)
-			use_female_sprites = FEMALE_BOOB
-		else if(gender == MALE && species.swap_male_clothes)
-			use_female_sprites = FEMALE_SPRITES
+		var/busty = FALSE
+		var/bustWantsToggle = HAS_TRAIT(src, TRAIT_TOGGLEBUST)
+		//  if species have slender frame to use feminine clothes variant, determine boobability
+		if((gender == FEMALE && !species.swap_female_clothes) || (gender == MALE && species.swap_male_clothes))
+			// you can be busty if you are female not togglingbust (default) / male is togglingbust
+			busty = ((gender == FEMALE) != bustWantsToggle)
+			use_female_sprites = busty ? FEMALE_BOOB : FEMALE_SPRITES
 
 	var/list/offsets
 	if(use_female_sprites)
@@ -1058,6 +1062,7 @@ GLOBAL_PROTECT(no_child_icons)
 		update_observer_view(wear_shirt,1)
 		var/datum/species/species = dna?.species
 		var/armsindex = get_limbloss_index(ARM_RIGHT, ARM_LEFT)
+		// hideboob if any overlaying sprites are wanting to reduce/hide bust
 		var/hideboob = FALSE
 		if(wear_armor?.flags_inv & HIDEBOOB)
 			hideboob = TRUE
@@ -1067,10 +1072,13 @@ GLOBAL_PROTECT(no_child_icons)
 			hideboob = TRUE
 		var/use_female_sprites = FALSE
 		if(species?.sexes)
-			if(gender == FEMALE && !species.swap_female_clothes)
-				use_female_sprites = hideboob ? FEMALE_SPRITES : FEMALE_BOOB
-			else if(gender == MALE && species.swap_male_clothes)
-				use_female_sprites = FEMALE_SPRITES
+			var/busty = FALSE
+			var/bustWantsToggle = HAS_TRAIT(src, TRAIT_TOGGLEBUST)
+			//  if species have slender frame to use feminine clothes variant, determine boobability
+			if((gender == FEMALE && !species.swap_female_clothes) || (gender == MALE && species.swap_male_clothes))
+				// you are busty if you are not forced to hide boob, and, females not togglingbust/males are togglingbust
+				busty = !hideboob && ((gender == FEMALE) != bustWantsToggle)
+				use_female_sprites = busty ? FEMALE_BOOB : FEMALE_SPRITES
 		var/list/offsets
 		if(use_female_sprites)
 			offsets = (age == AGE_CHILD) ? species.offset_features_child : species.offset_features_f
@@ -1124,17 +1132,22 @@ GLOBAL_PROTECT(no_child_icons)
 		update_observer_view(wear_armor,1)
 		var/datum/species/species = dna?.species
 		var/armsindex = get_limbloss_index(ARM_RIGHT, ARM_LEFT)
+		// hideboob if any overlaying sprites are wanting to reduce/hide bust
 		var/hideboob = FALSE
 		if(cloak?.flags_inv & HIDEBOOB)
 			hideboob = TRUE
 		if(species?.no_boobs)
 			hideboob = TRUE
+		// if armor needs shorter chest, ensuring all clothing under are forced to hideboob
 		var/use_female_sprites = FALSE
 		if(species?.sexes)
-			if(gender == FEMALE && !species.swap_female_clothes)
-				use_female_sprites = hideboob ? FEMALE_SPRITES : FEMALE_BOOB
-			else if(gender == MALE && species.swap_male_clothes)
-				use_female_sprites = FEMALE_SPRITES
+			var/busty = FALSE
+			var/bustWantsToggle = HAS_TRAIT(src, TRAIT_TOGGLEBUST)
+			// if species have slender frame to use feminine clothes variant, determine boobability
+			if((gender == FEMALE && !species.swap_female_clothes) || (gender == MALE && species.swap_male_clothes))
+				// you are busty if you are not forced to hide boob, and, females not togglingbust/males are togglingbust
+				busty = !hideboob && ((gender == FEMALE) != bustWantsToggle)
+				use_female_sprites = busty ? FEMALE_BOOB : FEMALE_SPRITES
 		var/list/offsets
 		if(use_female_sprites)
 			offsets = (age == AGE_CHILD) ? species.offset_features_child : species.offset_features_f
@@ -1682,11 +1695,8 @@ generate/load female uniform sprites matching all previously decided variables
 	var/hideboob = FALSE //used to tell if we should hide boobs, basically
 	for(var/obj/item/bodypart/BP as anything in bodyparts)
 		if(BP.body_zone == BODY_ZONE_CHEST)
-			if(wear_armor?.flags_inv & HIDEBOOB)
-				hideboob = TRUE
-			if(wear_shirt?.flags_inv & HIDEBOOB)
-				hideboob = TRUE
-			if(cloak?.flags_inv & HIDEBOOB)
+			// DOMOTAN EDIT: hide the sideboob always
+			if(src.gender == FEMALE)
 				hideboob = TRUE
 			new_limbs += BP.get_limb_icon(hideaux = hideboob)
 		else

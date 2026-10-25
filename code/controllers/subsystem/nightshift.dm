@@ -8,10 +8,10 @@ SUBSYSTEM_DEF(nightshift)
 	var/current_tod = null
 
 	var/nightshift_active = FALSE
-	var/nightshift_dawn_start = 	6 HOURS
+	var/nightshift_dawn_start = 	5 HOURS
 	var/nightshift_day_start = 		8 HOURS
-	var/nightshift_dusk_start = 	16 HOURS
-	var/nightshift_start_time = 	18 HOURS
+	var/nightshift_dusk_start = 	18 HOURS
+	var/nightshift_start_time = 	20 HOURS
 
 	/* Default STONEKEEP config.
 	var/nightshift_start_time = 756000	//9:00 PM - 2100 hrs

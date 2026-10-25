@@ -43,7 +43,7 @@
 	if(GLOB.thaumic_research.has_research(/datum/thaumic_research_node/splitter_efficiency/five))
 		max_items = 8
 		storage.max_total = 8000
-	else if(GLOB.thaumic_research.has_research(/datum/thaumic_research_node/splitter_efficiency/six))
+	if(GLOB.thaumic_research.has_research(/datum/thaumic_research_node/splitter_efficiency/six))
 		max_items = 12
 		storage.max_total = 12000
 

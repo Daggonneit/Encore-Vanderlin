@@ -220,6 +220,7 @@ GLOBAL_LIST_INIT(traits_by_type, list(
 		"Close Combatant" = TRAIT_CLOSECOMBAT,
 		"Steel Hearted" = TRAIT_STEELHEARTED,
 		"Sorcerer" = TRAIT_SORCERER,
+		"Chest Bust Overridden" = TRAIT_TOGGLEBUST,
 	),
 	/obj/item/bodypart = list(
 		"TRAIT_PARALYSIS" = TRAIT_PARALYSIS

@@ -638,9 +638,9 @@
 	craftdiff = 3
 
 /datum/artificer_recipe/eyewear/nighteyegoggles
-	name = "Nighteye Goggles (+1 Glass Pane, +1 Metal Gear) (Expert)"
+	name = "Nighteye Goggles (+1 Dorpel, +1 Metal Gear) (Expert)"
 	required_item = /obj/item/ingot/steel
-	additional_items = list(/obj/item/natural/glass = 1, /obj/item/gear/metal = 1)
+	additional_items = list(/obj/item/gem/diamond = 1, /obj/item/gear/metal = 1)
 	created_item = /obj/item/clothing/face/nighteyegoggles
 	hammers_per_item = 3
 	created_amount = 1

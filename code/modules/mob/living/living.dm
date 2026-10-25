@@ -796,6 +796,22 @@
 /mob/proc/get_contents()
 	return
 
+/**
+ * ToggleBust verb so that players can potentially override
+ *
+ */
+/mob/living/carbon/human/verb/toggle_bust()
+	set name = "Toggle Chest Alt"
+	set category = "IC"
+	if(!HAS_TRAIT(src, TRAIT_TOGGLEBUST))
+		ADD_TRAIT(src, TRAIT_TOGGLEBUST, "[type]")
+		to_chat(src, span_notice("Chest Alt Override Enabled! Only noticeable on supported clothes with species using a slender chest body type."))
+	else
+		REMOVE_TRAIT(src, TRAIT_TOGGLEBUST, "[type]")
+		to_chat(src, span_notice("Chest Alt Override Disabled! Back To Default Business!"))
+	update_body_parts(TRUE)
+	update_inv_cloak() // should transitively also call update for armor and shirt
+
 /mob/living/proc/lay_down()
 	set name = "Lay down"
 	set category = "IC.Interaction"

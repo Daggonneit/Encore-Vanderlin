@@ -1,0 +1,4 @@
+author: "Alexeivichi"
+delete-after: True
+changes:
+  - balance: "loadout slots 3 -> 6"
