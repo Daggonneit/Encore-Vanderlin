@@ -22,7 +22,7 @@
 	cmode_music = 'sound/music/cmode/antag/CombatLich.ogg'
 	total_positions = 3
 	exp_types_granted = list(EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)
-	allowed_patrons = list(/datum/patron/inhumen/archdevils)
+	allowed_patrons = list(/datum/patron/inhumen/archdevils, /datum/patron/inhumen/envy, /datum/patron/inhumen/deceivers, /datum/patron/inhumen/hertannea, /datum/patron/inhumen/nidhogg)
 	form_points = 5
 	technique_points = 3
 	languages = list(/datum/language/undead)
