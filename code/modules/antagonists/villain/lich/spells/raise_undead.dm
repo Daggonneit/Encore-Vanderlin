@@ -6,7 +6,7 @@
 
 	required_form = FORM_DEATH
 	required_technique = TECHNIQUE_SUMMONING
-	required_level = 12
+	required_level = 6
 
 	charge_time = 6 SECONDS
 	charge_drain = 1
