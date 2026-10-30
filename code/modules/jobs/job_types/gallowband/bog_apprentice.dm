@@ -48,7 +48,8 @@
 
 	traits = list(
 		TRAIT_FORAGER,
-		TRAIT_STEELHEARTED
+		TRAIT_STEELHEARTED,
+		TRAIT_NOAMBUSH
 	)
 	selection_color = "#a33096"
 	languages = list(/datum/language/lifesong)
