@@ -275,6 +275,12 @@
 				return list("shrink" = 0.6,"sx" = 5,"sy" = -3,"nx" = -5,"ny" = -2,"wx" = -5,"wy" = -1,"ex" = 3,"ey" = -2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 7,"sturn" = -7,"wturn" = 16,"eturn" = -22,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0)
 
 
+/obj/item/weapon/polearm/spear/angros
+	name = "Martyrdom"
+	desc = "A barbed, twisted tri-headed spear that embodies the cold, cruel hunt of the Katholikon's Inquisition. It can be used to run down the wicked and impure alike, or be thrown to pierce a corrupt heart."
+	icon_state = "psyspear"
+
+
 //................ Billhook ............... //
 /obj/item/weapon/polearm/spear/billhook
 	name = "billhook"
