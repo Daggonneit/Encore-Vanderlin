@@ -98,7 +98,7 @@
 			return ITEM_INTERACT_SUCCESS
 
 /obj/item/chalk/attack_self(mob/living/carbon/human/user, list/modifiers)
-	if(GET_MOB_SKILL_VALUE(user, /datum/attribute/skill/magic/arcane) <= SKILL_LEVEL_NONE)//We'll set up other items for other types of rune rituals
+	if(GET_MOB_SKILL_VALUE_RAW(user, /datum/attribute/skill/magic/arcane) < SKILL_LEVEL_NOVICE)//We'll set up other items for other types of rune rituals
 		to_chat(user, span_cult("Nothing comes in mind to draw with the chalk."))
 		return
 	var/obj/effect/decal/cleanable/ritual_rune/pickrune
@@ -171,7 +171,7 @@
 	return ITEM_INTERACT_SUCCESS
 
 /obj/item/weapon/knife/dagger/silver/arcyne/attack_self(mob/living/carbon/human/user, list/modifiers)
-	if(GET_MOB_SKILL_VALUE(user, /datum/attribute/skill/magic/arcane) <= SKILL_LEVEL_NONE)
+	if(GET_MOB_SKILL_VALUE_RAW(user, /datum/attribute/skill/magic/arcane) < SKILL_LEVEL_NOVICE)
 		return
 	var/obj/effect/decal/cleanable/ritual_rune/pickrune
 	var/runenameinput = browser_input_list(user, "Runes", "All Runes", GLOB.t4rune_types)

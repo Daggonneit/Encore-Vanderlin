@@ -8,6 +8,7 @@
 		STAT_PERCEPTION = 1,
 		STAT_ENDURANCE = 1,
 		/datum/attribute/skill/combat/knives = 20,
+		/datum/attribute/skill/combat/whipsflails = 20,
 		/datum/attribute/skill/craft/cooking = 40,
 		/datum/attribute/skill/craft/crafting = 20,
 		/datum/attribute/skill/labor/butchering = 20,

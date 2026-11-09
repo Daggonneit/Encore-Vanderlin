@@ -103,7 +103,7 @@
 /datum/infusion_recipe/ore/silver
 	name = "Silver Metallurgy"
 	target_type = /obj/item/ore/iron
-	result_type = /obj/item/ore/silver
+	result_type = /obj/item/alch/silverdust
 	required_essences = list(
 		/datum/thaumaturgical_essence/order = 5,
 		/datum/thaumaturgical_essence/magic = 5,
@@ -111,8 +111,8 @@
 
 /datum/infusion_recipe/ore/gold
 	name = "Gold Metallurgy"
-	target_type = /obj/item/ore/silver
-	result_type = /obj/item/ore/gold
+	target_type = /obj/item/alch/silverdust
+	result_type = /obj/item/alch/golddust
 	required_essences = list(
 		/datum/thaumaturgical_essence/order = 5,
 		/datum/thaumaturgical_essence/light = 5,
